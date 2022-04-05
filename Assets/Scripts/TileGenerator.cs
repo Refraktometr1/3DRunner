@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class TileGenerator : MonoBehaviour
 {
+    private Vector3 _newPositionTile;
+    private Vector3 step = Vector3.right*80;
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("TileExit");
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("TileEnter");
+        _newPositionTile = transform.position + step;
+        transform.position = _newPositionTile;
     }
 }
