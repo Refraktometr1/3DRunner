@@ -16,8 +16,8 @@ public class PlayerMoving : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        var a = other.transform.position;
-        Instantiate(tile, (a + (Vector3.right * 20)), Quaternion.identity);
+        // var a = other.transform.position;
+        // Instantiate(tile, (a + (Vector3.right * 20)), Quaternion.identity);
         Debug.Log("AAAAAAAAAAA");
     }
 
