@@ -10,8 +10,11 @@ public class TileGenerator : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("TileExit");
-
-        _newPositionTile = transform.position + step;
-        transform.position = _newPositionTile;
+        if ( other.name == "Player")
+        {
+            _newPositionTile = transform.position + step;
+            transform.position = _newPositionTile;
+        }
+       
     }
 }
