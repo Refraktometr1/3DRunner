@@ -9,7 +9,7 @@ public class Wall : MonoBehaviour
     {
         if ( other.name == "Player")
         {
-            Debug.Log(other.gameObject.name);
+            other.GetComponent<PlayerMoving>().Die();
         }
 
        

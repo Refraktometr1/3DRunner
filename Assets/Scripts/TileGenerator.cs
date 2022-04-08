@@ -9,12 +9,10 @@ public class TileGenerator : MonoBehaviour
     private Vector3 step = Vector3.right*80;
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("TileExit");
         if ( other.name == "Player")
         {
             _newPositionTile = transform.position + step;
             transform.position = _newPositionTile;
         }
-       
     }
 }
