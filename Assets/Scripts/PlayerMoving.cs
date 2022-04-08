@@ -8,16 +8,19 @@ using UnityEngine.PlayerLoop;
 
 public class PlayerMoving : MonoBehaviour
 {
-    public Vector3 speed;
     public Vector3 _touchStart;
     public Vector3 _swipeDistanse;
     private Time _startSwipeTime;
     private bool isDragging;
+    public PlayerScriptableObject PlayerData;
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position += speed;
+        var transform1 = transform;
+        transform1.position +=  PlayerData.Speed;
+        PlayerData.Position = transform1.position;
+
     }
 
     private void Update()
@@ -61,14 +64,6 @@ public class PlayerMoving : MonoBehaviour
                 Reset();
             }
         }
-        // if (Input.GetMouseButtonDown(0))
-        // {
-        //     if (Camera.main.ScreenToWorldPoint(Input.mousePosition).z > transform.position.z)
-        //     {
-        //         MoveRight
-        //     } = ;
-        // }
-
     }
 
     private void Reset()
@@ -97,7 +92,7 @@ public class PlayerMoving : MonoBehaviour
 
     public void Die()
     {
-        speed = Vector3.zero;
+        PlayerData.Speed = Vector3.zero;
         Debug.Log("Player Die");
     }
 }

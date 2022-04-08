@@ -41,9 +41,14 @@ public class ObstructionGenerator : MonoBehaviour
         Debug.Log("OBSTRICTION");
         if ( _obstuctionIndex == 9) 
             _obstuctionIndex = 0;
-       
+        
         _obstructionPull[ _obstuctionIndex].SetActive(true);
-        _obstructionPull[ _obstuctionIndex].transform.position = new Vector3((_player.transform.position.x + step.x), _obstructionPull[_obstuctionIndex].transform.position.y, ShiftPosition[Random.Range(0,3)]);
+        
+        _obstructionPull[_obstuctionIndex].transform.position = 
+            new Vector3((_player.transform.position.x + step.x),
+            _obstructionPull[_obstuctionIndex].transform.position.y,
+            ShiftPosition[Random.Range(0,3)]);
+        
         _obstuctionIndex++;
     }
 }
