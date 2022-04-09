@@ -38,7 +38,6 @@ public class ObstructionGenerator : MonoBehaviour
   
     private void CreateObstruction()
     {
-        Debug.Log("OBSTRICTION");
         if ( _obstuctionIndex == 9) 
             _obstuctionIndex = 0;
         

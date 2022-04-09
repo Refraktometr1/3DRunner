@@ -95,4 +95,9 @@ public class PlayerMoving : MonoBehaviour
         PlayerData.Speed = Vector3.zero;
         Debug.Log("Player Die");
     }
+
+    public void Hit()
+    {
+        Debug.Log("Hit AAAA");
+    }
 }
