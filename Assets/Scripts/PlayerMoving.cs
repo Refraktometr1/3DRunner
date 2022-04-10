@@ -98,6 +98,9 @@ public class PlayerMoving : MonoBehaviour
 
     public void Hit()
     {
+        Vector3 sd = new Vector3(2f, 2f, 2f);
+        var a = transform.localScale; 
+        
         Debug.Log("Hit AAAA");
     }
 }

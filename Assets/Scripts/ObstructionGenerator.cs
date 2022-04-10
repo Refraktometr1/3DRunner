@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class ObstructionGenerator : MonoBehaviour
 {
-    [SerializeField] private GameObject _player;
+    [SerializeField] private PlayerScriptableObject _player;
     [SerializeField] private float _distanseBetwinObstruction = 10;
     [SerializeField] private GameObject _obstruction;
     private List<GameObject> _obstructionPull = new List<GameObject>();
@@ -21,7 +21,7 @@ public class ObstructionGenerator : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
-            var obstruction = Instantiate(_obstruction, Vector3.up, Quaternion.identity);
+            var obstruction = Instantiate(_obstruction, Vector3.zero, Quaternion.identity);
             obstruction.SetActive(false);
             _obstructionPull.Add(obstruction);
         }
@@ -29,10 +29,10 @@ public class ObstructionGenerator : MonoBehaviour
 
     private void Update()
     {
-        if ( _player.transform.position.x - _createObstructionPosition > _distanseBetwinObstruction)
+        if ( _player.Position.x - _createObstructionPosition > _distanseBetwinObstruction)
         {
             CreateObstruction();
-            _createObstructionPosition = _player.transform.position.x;
+            _createObstructionPosition = _player.Position.x;
         }
     }
   
@@ -44,7 +44,7 @@ public class ObstructionGenerator : MonoBehaviour
         _obstructionPull[ _obstuctionIndex].SetActive(true);
         
         _obstructionPull[_obstuctionIndex].transform.position = 
-            new Vector3((_player.transform.position.x + step.x),
+            new Vector3((_player.Position.x + step.x),
             _obstructionPull[_obstuctionIndex].transform.position.y,
             ShiftPosition[Random.Range(0,3)]);
         

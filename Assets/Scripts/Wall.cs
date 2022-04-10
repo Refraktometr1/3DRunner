@@ -18,10 +18,5 @@ public class Wall : MonoBehaviour
         {
             other.GetComponent<PlayerMoving>().Hit();
         }
-
-        
-        
-
-       
     }
 }

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   Speed: {x: 0.05, y: 0, z: 0}
-  Position: {x: 4.75, y: 1, z: 0}
+  Position: {x: 11.650026, y: 1, z: 0}
