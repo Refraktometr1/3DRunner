@@ -23,8 +23,5 @@ public class UIController : MonoBehaviour
       playerData.Speed.x = 0.05f;
    }
 
-   private void SpeedUp()
-   {
-      playerData.Speed.x += 0.01f;
-   }
+   private void SpeedUp() => playerData.Speed.x += 0.01f;
 }

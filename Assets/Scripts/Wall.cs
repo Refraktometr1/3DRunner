@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
+    private PlayerResourceStorage _playerResourceStorage;
+    private void Awake()
+    {
+        _playerResourceStorage = Resources.Load<PlayerResourceStorage>("PlayerResourceStorage");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if ( other.name != "Player")
@@ -17,6 +23,7 @@ public class Wall : MonoBehaviour
         else
         {
             other.GetComponent<PlayerMoving>().Hit();
+            _playerResourceStorage.Money = (int)Math.Round(_playerResourceStorage.Money * 0.75f);
         }
     }
 }

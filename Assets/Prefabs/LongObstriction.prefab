@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6993594444089698334}
   - component: {fileID: 4284473451680963177}
   m_Layer: 0
-  m_Name: Obstriction
+  m_Name: LongObstriction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 439678600838984903}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c3c0e7091c139714782f597ba92e674a, type: 2}
+  - {fileID: 2100000, guid: 661255e0265fdd040a6ad3da758cc06e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
