@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Material/Black.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LongObstriction.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Money.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerResourceStorage.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LongObstruction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyObstruction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstruction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ObstructionPullMono.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstriction.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstriction.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resourse/PlayerData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlayerData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObstructionGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObstructionGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScriptableObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wall.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerResourceStorage.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +44,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="8224">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="8224" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -88,7 +73,8 @@
       <workItem from="1649501923380" duration="2497000" />
       <workItem from="1649583439475" duration="6000" />
       <workItem from="1649583534283" duration="2241000" />
-      <workItem from="1649590637408" duration="17107000" />
+      <workItem from="1649590637408" duration="17704000" />
+      <workItem from="1649658228471" duration="806000" />
     </task>
     <servers />
   </component>

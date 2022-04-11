@@ -20,8 +20,8 @@ public class UIController : MonoBehaviour
    private void Restart()
    {
       SceneManager.LoadScene("Main");
-      playerData.Speed.x = 0.05f;
+      playerData.Speed.x = 0.2f;
    }
 
-   private void SpeedUp() => playerData.Speed.x += 0.01f;
+   private void SpeedUp() => playerData.Speed.x += 0.02f;
 }

@@ -11,6 +11,6 @@ public class PlayerScriptableObject : ScriptableObject
 
    private void OnEnable()
    {
-      Speed = new Vector3	(0.05f,0,0);
+      Speed = new Vector3	(0.2f,0,0);
    }
 }
