@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 
@@ -8,4 +10,7 @@ using UnityEngine;
 public class PlayerResourceStorage : ScriptableObject
 {
     public int Money;
+
+    public void OnEnable() => SaveSystem.LoadScriptableObject("PlayerResourceStorage", this);
 }
+

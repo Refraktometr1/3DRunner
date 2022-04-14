@@ -7,10 +7,14 @@ using UnityEngine;
 public class PlayerScriptableObject : ScriptableObject
 {
    public Vector3 Speed;
-   public Vector3 Position;
 
    private void OnEnable()
    {
-      Speed = new Vector3	(0.2f,0,0);
+       SaveSystem.LoadScriptableObject("PlayerData", this);
    }
+
+   // private void OnDestroy()
+   // {
+   //    SaveSystem.SaveData(this, name);
+   // }
 }

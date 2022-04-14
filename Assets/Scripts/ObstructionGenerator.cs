@@ -7,7 +7,6 @@ using Random = UnityEngine.Random;
 
 public class ObstructionGenerator : MonoBehaviour
 {
-    [SerializeField] private PlayerScriptableObject _player;
     [SerializeField] private float _distanseBetwinObstruction;
     
    
@@ -21,18 +20,18 @@ public class ObstructionGenerator : MonoBehaviour
 
     private void Update()
     {
-        if ( _player.Position.x - _createObstructionPosition > _distanseBetwinObstruction)
+        if (PlayerMoving.Instanse.transform.position.x - _createObstructionPosition > _distanseBetwinObstruction)
         {
             CreateObstruction();
-            _createObstructionPosition = _player.Position.x;
+            _createObstructionPosition = PlayerMoving.Instanse.transform.position.x;
         }
     }
   
     private void CreateObstruction()
     { 
-        var position =  new Vector3((_player.Position.x + step.x), 0, ShiftPosition[Random.Range(0,3)]);
+        var position =  new Vector3((PlayerMoving.Instanse.transform.position.x + step.x), 0, ShiftPosition[Random.Range(0,3)]);
 
-        bool isBonusGenerate = Random.Range(1, 101) % 10 == 0;
+        bool isBonusGenerate = Random.Range(1, 101) % 5 == 0;
         if (isBonusGenerate)
         {
             ObstructionsBonus[0].SetObstruction(position);
@@ -42,5 +41,12 @@ public class ObstructionGenerator : MonoBehaviour
         {
             Obstructions[Random.Range(0,Obstructions.Count)].SetObstruction(position); 
         }
+    }
+
+    private void OnDisable()
+    {
+        Obstructions.Clear();
+        ObstructionsBonus.Clear();
+        _createObstructionPosition = 0f;
     }
 }

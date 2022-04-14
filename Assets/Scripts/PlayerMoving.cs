@@ -1,40 +1,57 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
-public class PlayerMoving : MonoBehaviour
+public class PlayerMoving : MonoSingleton<PlayerMoving>
 {
     public Vector3 _touchStart;
     public Vector3 _swipeDistanse;
-    private Time _startSwipeTime;
     private bool isDragging;
     public PlayerScriptableObject PlayerData;
 
-    // Update is called once per frame
     void FixedUpdate()
-    {
-        var transform1 = transform;
-        transform1.position +=  PlayerData.Speed;
-        PlayerData.Position = transform1.position;
-
+    { 
+        transform.position +=  PlayerData.Speed;
     }
 
     private void Update()
     {
+        // Ray rey = Camera.main.ScreenPointToRay(Input.mousePosition);
+        // if (Physics.Raycast(rey, out RaycastHit reycastHit))
+        // {
+        //     if (3 >= reycastHit.point.z && reycastHit.point.z>= -3f)
+        //     {
+        //         var posinion  = transform.position;
+        //         posinion.z = reycastHit.point.z;
+        //         transform.position = posinion;
+        //     }
+        // }
         if (Input.GetMouseButtonDown(0))
         {
-            isDragging = true;
-            _touchStart = Input.mousePosition;
+             isDragging = true;
+             _touchStart = Input.mousePosition;
         }
         else if (Input.GetMouseButtonUp(0))
         {
             Reset();
         }
 
+        if (!isDragging)
+            return;
+
+        _swipeDistanse = Input.mousePosition - _touchStart;
+        if (_swipeDistanse.x < -50)
+        {
+            SwipeLeft();
+            Reset();
+        }
+
+        if (_swipeDistanse.x > 50)
+        {
+            SwipeRight();
+            Reset();
+        }
+        
+        
         // if (Input.touchCount > 0)
         // {
         //     if (Input.touches[0].phase == TouchPhase.Began)
@@ -48,22 +65,6 @@ public class PlayerMoving : MonoBehaviour
         //         Reset();
         //     }
         // }
-
-        if (isDragging)
-        {
-            _swipeDistanse = Input.mousePosition - _touchStart;
-            if (_swipeDistanse.x < -50 )
-            {
-                SwipeLeft();
-                Reset();
-            }
-
-            if (_swipeDistanse.x > 50 )
-            {
-                SwipeRight();
-                Reset();
-            }
-        }
     }
 
     private void Reset()
@@ -98,9 +99,6 @@ public class PlayerMoving : MonoBehaviour
 
     public void Hit()
     {
-        Vector3 sd = new Vector3(2f, 2f, 2f);
-        var a = transform.localScale; 
-        
         Debug.Log("Hit AAAA");
     }
 }
