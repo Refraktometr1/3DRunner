@@ -2,23 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Save/PlayerData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Save/PlayerResourceStorage.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/MonoSingleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoadSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Money.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Money.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerResourceStorage.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlayerResourceStorage.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Save/PlayerData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Save/PlayerResourceStorage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Save/PlayerResourceStorage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyCounterUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyCounterUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObstructionGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObstructionGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMoving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMoving.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerResourceStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerResourceStorage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScriptableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
@@ -91,7 +102,10 @@
       <workItem from="1649864784730" duration="4652000" />
       <workItem from="1649877783708" duration="4003000" />
       <workItem from="1649918189835" duration="3768000" />
-      <workItem from="1649923727443" duration="924000" />
+      <workItem from="1649923727443" duration="16869000" />
+      <workItem from="1650006249914" duration="3014000" />
+      <workItem from="1650090603822" duration="7736000" />
+      <workItem from="1650180654736" duration="3591000" />
     </task>
     <servers />
   </component>

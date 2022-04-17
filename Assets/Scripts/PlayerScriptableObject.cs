@@ -10,11 +10,9 @@ public class PlayerScriptableObject : ScriptableObject
 
    private void OnEnable()
    {
-       SaveSystem.LoadScriptableObject("PlayerData", this);
+      Load();
    }
 
-   // private void OnDestroy()
-   // {
-   //    SaveSystem.SaveData(this, name);
-   // }
+   public void Save() => SaveLoadSystem.SaveData(this, name);
+   public void Load() => SaveLoadSystem.LoadScriptableObject(name, this);
 }

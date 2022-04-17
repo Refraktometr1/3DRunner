@@ -11,6 +11,19 @@ public class PlayerResourceStorage : ScriptableObject
 {
     public int Money;
 
-    public void OnEnable() => SaveSystem.LoadScriptableObject("PlayerResourceStorage", this);
+    private void OnEnable()
+    {
+        Load();
+    }
+
+    public void Load()
+    {
+        SaveLoadSystem.LoadScriptableObject(name,this);
+    }
+
+    public void Save()
+    {
+        SaveLoadSystem.SaveData(this, name); 
+    }
 }
 

@@ -8,7 +8,6 @@ using Random = UnityEngine.Random;
 public class ObstructionGenerator : MonoBehaviour
 {
     [SerializeField] private float _distanseBetwinObstruction;
-    
    
     public static List<ObstructionPullMono> ObstructionsBonus;
     public static List<ObstructionPullMono> Obstructions;

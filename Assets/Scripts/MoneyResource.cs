@@ -5,11 +5,7 @@ using UnityEngine;
 
 public class MoneyResource : MonoBehaviour
 {
-    private PlayerResourceStorage _playerResource;
-    private void Start()
-    {
-        _playerResource = Resources.Load<PlayerResourceStorage>("PlayerResourceStorage");
-    }
+    public PlayerResourceStorage _playerResource;
 
     private void OnTriggerEnter(Collider other)
     {
