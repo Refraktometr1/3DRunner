@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Button text="Button" display-tooltip-when-elided="true" name="Settings" style="width: 58px; height: 39px; visibility: visible; display: flex; opacity: 1; overflow: visible; left: 1%; top: 5%; font-size: 22px; -unity-text-align: middle-center;" />
+</ui:UXML>
