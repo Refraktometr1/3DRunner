@@ -11,7 +11,7 @@ public class ObstructionGenerator : MonoBehaviour
    
     public static List<ObstructionPullMono> ObstructionsBonus;
     public static List<ObstructionPullMono> Obstructions;
-    private Vector3 step = Vector3.right*50;
+    private Vector3 step = Vector3.forward*50;
     private float _createObstructionPosition;
 
     private List<float> ShiftPosition = new List<float> {-3, 0, 3};
@@ -19,16 +19,16 @@ public class ObstructionGenerator : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerMoving.Instanse.transform.position.x - _createObstructionPosition > _distanseBetwinObstruction)
+        if (PlayerMoving.Instanse.transform.position.z - _createObstructionPosition > _distanseBetwinObstruction)
         {
             CreateObstruction();
-            _createObstructionPosition = PlayerMoving.Instanse.transform.position.x;
+            _createObstructionPosition = PlayerMoving.Instanse.transform.position.z;
         }
     }
   
     private void CreateObstruction()
     { 
-        var position =  new Vector3((PlayerMoving.Instanse.transform.position.x + step.x), 0, ShiftPosition[Random.Range(0,3)]);
+        var position =  new Vector3(ShiftPosition[Random.Range(0,3)], 0,(PlayerMoving.Instanse.transform.position.z + step.z));
 
         bool isBonusGenerate = Random.Range(1, 101) % 5 == 0;
         if (isBonusGenerate)

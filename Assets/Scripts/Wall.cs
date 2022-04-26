@@ -16,14 +16,14 @@ public class Wall : MonoBehaviour
         if ( other.name != "Player")
          return;
 
-        if (transform.position.x - other.transform.position.x > 1)
+        if (transform.position.z - other.transform.position.z > 1)
         {
             other.GetComponent<PlayerMoving>().Die();
         }
         else
         {
             other.GetComponent<PlayerMoving>().Hit();
-            _playerResourceStorage.Money = (int)Math.Round(_playerResourceStorage.Money * 0.75f);
+            _playerResourceStorage.Money = (int)Mathf.Round(_playerResourceStorage.Money * 0.75f);
         }
     }
 }

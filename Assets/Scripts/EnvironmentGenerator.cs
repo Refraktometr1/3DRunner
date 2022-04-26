@@ -15,22 +15,28 @@ public class EnvironmentGenerator : MonoBehaviour
        var RightTilePrefab = Resources.Load<GameObject>("Prefabs/RightEnvironmentTile");
        for (int i = 0; i < 5; i++)
        {
-           Vector3 positionLeft = (Vector3.forward * _roadOffset)+(Vector3.right * ((i*_tileDimension.y)));
-           Vector3 positionRight = (Vector3.back * _roadOffset)+(Vector3.right * ((i*_tileDimension.y)));
+           Vector3 positionLeft = (Vector3.right * _roadOffset)+(Vector3.forward * ((i*_tileDimension.y)));
+           Vector3 positionRight = (Vector3.left * _roadOffset)+(Vector3.forward * ((i*_tileDimension.y)));
            var left = Instantiate(LeftTilePrefab, positionLeft, Quaternion.identity);
            var right = Instantiate(RightTilePrefab, positionRight, Quaternion.identity);
            _leftEnvironmentPool.Add(left);
            _rightEnvironmentPool.Add(right);
        }
+       
+       var tilePrefab = Resources.Load<GameObject>("Prefabs/Tile");
+       for (int i = 0; i < 12; i++)
+       {
+           var tile = Instantiate(tilePrefab, Vector3.forward * i*10, Quaternion.identity);
+       }
     }
    
     void Update()
     {
-        if ( PlayerMoving.Instanse.transform.position.x > _leftEnvironmentPool[_poolIndex].transform.position.x + 25)
+        if ( PlayerMoving.Instanse.transform.position.z > _leftEnvironmentPool[_poolIndex].transform.position.z + 25)
         {
-            var offset =  _leftEnvironmentPool[_poolIndex].transform.position.x + _tileDimension.x * (_leftEnvironmentPool.Count);
-            _leftEnvironmentPool[_poolIndex].transform.position = Vector3.right*offset + Vector3.forward * _roadOffset;
-            _rightEnvironmentPool[_poolIndex].transform.position = Vector3.right*offset + Vector3.back * _roadOffset;
+            var offset =  _leftEnvironmentPool[_poolIndex].transform.position.z + _tileDimension.x * (_leftEnvironmentPool.Count);
+            _leftEnvironmentPool[_poolIndex].transform.position = Vector3.forward*offset + Vector3.right * _roadOffset;
+            _rightEnvironmentPool[_poolIndex].transform.position = Vector3.forward*offset + Vector3.left * _roadOffset;
             
             _poolIndex++;
             if (_poolIndex == _leftEnvironmentPool.Count)

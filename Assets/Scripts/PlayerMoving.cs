@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMoving : MonoSingleton<PlayerMoving>
 {
@@ -60,18 +61,18 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
 
     private void SwipeRight()
     {
-        if (transform.position.z > -3)
+        if (transform.position.x < 3)
         {
-            transform.position = transform.position + Vector3.back * 3;
+            transform.position = transform.position + Vector3.right * 3;
         }
         Debug.Log("SwipeRight");
     }
     
     private void SwipeLeft()
     {
-        if (transform.position.z < 3)
+        if (transform.position.x > -3)
         {
-            transform.position = transform.position - Vector3.back * 3;
+            transform.position = transform.position + Vector3.left * 3;
         }
         Debug.Log("SwipeLeft");
     }
@@ -79,6 +80,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
     public void Die()
     {
         PlayerData.Speed = Vector3.zero;
+        SceneManager.LoadScene("Main");
         Debug.Log("Player Die");
     }
 
