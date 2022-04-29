@@ -732,7 +732,6 @@ GameObject:
   - component: {fileID: 1474893101}
   - component: {fileID: 1474893100}
   - component: {fileID: 1474893102}
-  - component: {fileID: 1474893103}
   m_Layer: 5
   m_Name: PlaySceneUI
   m_TagString: Untagged
@@ -785,31 +784,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 11400000, guid: fb3acb3ae06529742bc1259e7a3e85fe, type: 2}
   ResourceStorage: {fileID: 11400000, guid: 2ac159b6898dfa9489f26e6075f7172c, type: 2}
---- !u!114 &1474893103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474893099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96001bb21be0d3f4c95dcbd7574ec5a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _settings:
-  - Name: start
-    Callback:
-      m_PersistentCalls:
-        m_Calls: []
-  - Name: stop
-    Callback:
-      m_PersistentCalls:
-        m_Calls: []
-  _duration: 2
-  _easing: 0
-  _buttonDelay: 0
-  _buttonTemplate: {fileID: 9197481963319205126, guid: e0c98b4446023d04f838a186b0ebee67, type: 3}
 --- !u!1 &1761925657
 GameObject:
   m_ObjectHideFlags: 0

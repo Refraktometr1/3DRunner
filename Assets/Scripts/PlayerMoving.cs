@@ -86,6 +86,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
 
     public void Hit()
     {
+        Handheld.Vibrate(); 
         Debug.Log("Hit AAAA");
     }
 }

@@ -11,14 +11,14 @@ public class EnvironmentGenerator : MonoBehaviour
     private int _poolIndex;
     void Start()
     {
-       GameObject LeftTilePrefab = Resources.Load<GameObject>("Prefabs/LeftEnvironmentTile");
-       var RightTilePrefab = Resources.Load<GameObject>("Prefabs/RightEnvironmentTile");
+       var LeftTilePrefab = Resources.Load<GameObject>("Prefabs/EnvironmentLeft");
+       var RightTilePrefab = Resources.Load<GameObject>("Prefabs/EnvironmentRight");
        for (int i = 0; i < 5; i++)
        {
            Vector3 positionLeft = (Vector3.right * _roadOffset)+(Vector3.forward * ((i*_tileDimension.y)));
            Vector3 positionRight = (Vector3.left * _roadOffset)+(Vector3.forward * ((i*_tileDimension.y)));
-           var left = Instantiate(LeftTilePrefab, positionLeft, Quaternion.identity);
-           var right = Instantiate(RightTilePrefab, positionRight, Quaternion.identity);
+           var right = Instantiate(RightTilePrefab, positionLeft, Quaternion.identity);
+           var left = Instantiate(LeftTilePrefab, positionRight, Quaternion.identity);
            _leftEnvironmentPool.Add(left);
            _rightEnvironmentPool.Add(right);
        }
@@ -35,8 +35,8 @@ public class EnvironmentGenerator : MonoBehaviour
         if ( PlayerMoving.Instanse.transform.position.z > _leftEnvironmentPool[_poolIndex].transform.position.z + 25)
         {
             var offset =  _leftEnvironmentPool[_poolIndex].transform.position.z + _tileDimension.x * (_leftEnvironmentPool.Count);
-            _leftEnvironmentPool[_poolIndex].transform.position = Vector3.forward*offset + Vector3.right * _roadOffset;
-            _rightEnvironmentPool[_poolIndex].transform.position = Vector3.forward*offset + Vector3.left * _roadOffset;
+            _leftEnvironmentPool[_poolIndex].transform.position = Vector3.forward*offset + Vector3.left * _roadOffset;
+            _rightEnvironmentPool[_poolIndex].transform.position = Vector3.forward*offset + Vector3.right * _roadOffset;
             
             _poolIndex++;
             if (_poolIndex == _leftEnvironmentPool.Count)
