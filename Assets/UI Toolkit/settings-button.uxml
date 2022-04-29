@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/setting-button-green.uss?fileID=7433441132597879392&amp;guid=912b6d6010733e74a93aee5f586d2f2e&amp;type=3#setting-button-green" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" name="button" class="setting-button-green" />
+</ui:UXML>

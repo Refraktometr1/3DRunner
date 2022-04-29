@@ -303,14 +303,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199957294}
-  m_LocalRotation: {x: 0.0000000074505815, y: -0.49269882, z: 0.8701999, w: 0}
-  m_LocalPosition: {x: 0, y: 56, z: 73}
-  m_LocalScale: {x: 10, y: 1, z: 3.5}
+  m_LocalRotation: {x: 0, y: -0.67559016, z: 0.7372774, w: 0}
+  m_LocalPosition: {x: 0, y: 67.1, z: 88.09}
+  m_LocalScale: {x: 14, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1899013712}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 85, y: 0, z: 180}
 --- !u!1 &467718556
 GameObject:
   m_ObjectHideFlags: 3
@@ -713,6 +713,7 @@ GameObject:
   - component: {fileID: 1474893101}
   - component: {fileID: 1474893100}
   - component: {fileID: 1474893102}
+  - component: {fileID: 1474893103}
   m_Layer: 5
   m_Name: PlaySceneUI
   m_TagString: Untagged
@@ -734,7 +735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: 38c005e66e19fb749bb52852ebe878f0, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: bfc88c4e4e6fc0e489258595d53498c9, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: f053c8c3a66a4fb4c9e872ca776cfd6d, type: 3}
   m_SortingOrder: 0
 --- !u!4 &1474893101
 Transform:
@@ -765,6 +766,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerData: {fileID: 11400000, guid: fb3acb3ae06529742bc1259e7a3e85fe, type: 2}
   ResourceStorage: {fileID: 11400000, guid: 2ac159b6898dfa9489f26e6075f7172c, type: 2}
+--- !u!114 &1474893103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474893099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96001bb21be0d3f4c95dcbd7574ec5a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _settings:
+  - Name: start
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: stop
+    Callback:
+      m_PersistentCalls:
+        m_Calls: []
+  _duration: 2
+  _easing: 0
+  _buttonDelay: 0
+  _buttonTemplate: {fileID: 9197481963319205126, guid: e0c98b4446023d04f838a186b0ebee67, type: 3}
 --- !u!1 &1761925657
 GameObject:
   m_ObjectHideFlags: 0

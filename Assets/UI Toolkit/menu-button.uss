@@ -1,0 +1,37 @@
+.menu-button {
+    left: 0;
+    top: 0;
+    width: 16%;
+    height: 4%;
+    font-size: 22px;
+    -unity-font: url('project://database/Assets/TextMesh%20Pro/Examples%20&%20Extras/Fonts/Anton.ttf?fileID=12800000&guid=997a43b767814dd0a7642ec9b78cba41&type=3#Anton');
+    -unity-font-style: bold;
+    transition-duration: 500ms;
+}
+
+.menu-button:hover {
+    background-color: rgb(0, 0, 0);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.setting-container {
+    width: 620px;
+    height: 800px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: auto;
+    align-items: center;
+    justify-content: flex-start;
+    transition-duration: 1s;
+}
+
+.setting-container:disabled {
+    position: absolute;
+    left: -800px;
+    top: 50px;
+    transition-duration: 1s;
+}
