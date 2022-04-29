@@ -11,10 +11,13 @@ public class ObstructionGenerator : MonoBehaviour
    
     public static List<ObstructionPullMono> ObstructionsBonus;
     public static List<ObstructionPullMono> Obstructions;
+    public static List<ObstructionPullMono> StaticObstructions;
     private Vector3 step = Vector3.forward*50;
     private float _createObstructionPosition;
+    private int _banStatic = 0;
+    private int? _banRoadPositionIndex = null;
 
-    private List<float> ShiftPosition = new List<float> {-3, 0, 3};
+    private List<int> _roadPosition = new List<int> {-3, 3, 0};
 
 
     private void Update()
@@ -27,14 +30,42 @@ public class ObstructionGenerator : MonoBehaviour
     }
   
     private void CreateObstruction()
-    { 
-        var position =  new Vector3(ShiftPosition[Random.Range(0,3)], 0,(PlayerMoving.Instanse.transform.position.z + step.z));
+    {
 
+        var roadPositionIndex = Random.Range(0, 3);
         bool isBonusGenerate = Random.Range(1, 101) % 5 == 0;
+        
+        if (roadPositionIndex == _banRoadPositionIndex && isBonusGenerate == false)
+        {
+            roadPositionIndex = roadPositionIndex == 1 ?  0 : 1;
+        }
+        var position =  new Vector3(_roadPosition[roadPositionIndex], 0,(PlayerMoving.Instanse.transform.position.z + step.z));
+        
         if (isBonusGenerate)
         {
             ObstructionsBonus[0].SetObstruction(position);
-            Debug.Log("Bonus");
+            return;
+        }
+
+        if (_banStatic > 0)
+        {
+            Obstructions[Random.Range(0,Obstructions.Count)].SetObstruction(position);
+            if (_banStatic == 1)
+                _banRoadPositionIndex = null;
+            
+            _banStatic--;
+            return;
+        }
+        
+        bool isStaticObstructions = Random.Range(1, 101) > 90;
+        if (isStaticObstructions)
+        {
+            _banStatic = 5;
+            if (position.x == 0)
+                position.x = _roadPosition[Random.Range(0, 1)];
+           
+            StaticObstructions[Random.Range(0,StaticObstructions.Count)].SetObstruction(position);
+            _banRoadPositionIndex = _roadPosition.IndexOf((int)position.x);
         }
         else
         {
@@ -46,6 +77,7 @@ public class ObstructionGenerator : MonoBehaviour
     {
         Obstructions.Clear();
         ObstructionsBonus.Clear();
+        StaticObstructions.Clear();
         _createObstructionPosition = 0f;
     }
 }

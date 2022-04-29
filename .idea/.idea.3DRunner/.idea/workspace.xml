@@ -2,19 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Material/UITexture/setting-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/main-menu.uxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/settings-button-green.uxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/settings-button.uxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/setting-button-green.uss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Material/Yello.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Env_v1 (1).fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Env_v1 -1 (1).fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Env_v2.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Env_v3.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Safe.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Safe.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstructions/LongObstruction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstructions/MoneyObstruction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstructions/Obstruction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstructions/StaticObstruction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/LongObstriction.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/LongObstriction.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Obstriction.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Obstriction.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/PanelSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/PlaySceneUI.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/PlaySceneUI.uxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LongObstruction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyObstruction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstruction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObstructionGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObstructionGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObstructionPullMono.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObstructionPullMono.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wall.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +74,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17440">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3112">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17440" />
+      <option name="pid" value="3112" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -113,6 +122,7 @@
       <workItem from="1650957853749" duration="1597000" />
       <workItem from="1650975224545" duration="1779000" />
       <workItem from="1651049418245" duration="9951000" />
+      <workItem from="1651229604060" duration="6894000" />
     </task>
     <servers />
   </component>

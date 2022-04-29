@@ -8,6 +8,7 @@ public abstract class ObstructionPullMono : MonoBehaviour
     private List<GameObject> _bonusObjects = new List<GameObject>();
     private int _index;
     public bool isBonus;
+    public bool isStatic;
      
     void Start()
     {
@@ -21,11 +22,17 @@ public abstract class ObstructionPullMono : MonoBehaviour
        if (isBonus)
        {
            (ObstructionGenerator.ObstructionsBonus ??= new List<ObstructionPullMono>()).Add(this);
+           return;
        }
-       else
+
+       if (isStatic)
        {
-           (ObstructionGenerator.Obstructions ??= new List<ObstructionPullMono>()).Add(this);
+           (ObstructionGenerator.StaticObstructions ??= new List<ObstructionPullMono>()).Add(this);
+           return;
        }
+       
+       (ObstructionGenerator.Obstructions ??= new List<ObstructionPullMono>()).Add(this);
+       
     }
 
     public void SetObstruction(Vector3 position)

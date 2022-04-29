@@ -6,6 +6,7 @@ using UnityEngine;
 public class Wall : MonoBehaviour
 {
     private PlayerResourceStorage _playerResourceStorage;
+    public int dieToHitDistance;
     private void Awake()
     {
         _playerResourceStorage = Resources.Load<PlayerResourceStorage>("PlayerResourceStorage");
@@ -16,7 +17,7 @@ public class Wall : MonoBehaviour
         if ( other.name != "Player")
          return;
 
-        if (transform.position.z - other.transform.position.z > 1)
+        if (transform.position.z - other.transform.position.z > dieToHitDistance)
         {
             other.GetComponent<PlayerMoving>().Die();
         }

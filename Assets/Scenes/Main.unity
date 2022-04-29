@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 184278500}
   - component: {fileID: 184278501}
   - component: {fileID: 184278502}
+  - component: {fileID: 184278503}
   m_Layer: 0
   m_Name: ObstructionManagerHolder
   m_TagString: Untagged
@@ -185,6 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabGameObject: {fileID: 4858782467633189147, guid: 51cb497cdbcd35a45a5af2a396cb317e, type: 3}
   isBonus: 0
+  isStatic: 0
 --- !u!114 &184278501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabGameObject: {fileID: 439678600838984903, guid: 61d61982e4078d54b81b9f1edc86620f, type: 3}
   isBonus: 0
+  isStatic: 0
 --- !u!114 &184278502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,6 +216,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabGameObject: {fileID: 439678600838984903, guid: 25ce705743e7e7646bf1c7941faf5164, type: 3}
   isBonus: 0
+  isStatic: 0
+--- !u!114 &184278503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184278497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a917ba9b33ae24543925a504a68d9f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabGameObject: {fileID: 3423915668194771912, guid: f4cd08dda48729241a2cdf581c5ff5e6, type: 3}
+  isBonus: 0
+  isStatic: 1
 --- !u!1 &199957294
 GameObject:
   m_ObjectHideFlags: 0
