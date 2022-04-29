@@ -57,7 +57,7 @@ public class ObstructionGenerator : MonoBehaviour
             return;
         }
         
-        bool isStaticObstructions = Random.Range(1, 101) > 90;
+        bool isStaticObstructions = Random.Range(1, 101) > 70;
         if (isStaticObstructions)
         {
             _banStatic = 5;
