@@ -1,4 +1,5 @@
 using System;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -86,7 +87,9 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
 
     public void Hit()
     {
-        Handheld.Vibrate(); 
+        Vibration.Vibrate(250,-1,true);
+        // Handheld.Vibrate(); 
+        
         Debug.Log("Hit AAAA");
     }
 }

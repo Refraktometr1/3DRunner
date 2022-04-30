@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObstructionGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObstructionGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMoving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMoving.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -56,10 +57,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="3112">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="3112" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -105,6 +106,7 @@
       <workItem from="1650975224545" duration="1779000" />
       <workItem from="1651049418245" duration="9951000" />
       <workItem from="1651229604060" duration="11711000" />
+      <workItem from="1651309807191" duration="3887000" />
     </task>
     <servers />
   </component>

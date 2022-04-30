@@ -44,6 +44,7 @@ public class SettingsButton : MonoBehaviour
 
   private void SpeedUp()
   {
+    Vibration.Vibrate(30,100,true);
     PlayerData.Speed.z += 0.02f;
   }
 
