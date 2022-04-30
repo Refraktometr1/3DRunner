@@ -15,6 +15,7 @@ public abstract class ObstructionPullMono : MonoBehaviour
        for (int i = 0; i < 10; i++)
        {
            var obstruction = Instantiate(prefabGameObject, Vector3.zero, Quaternion.identity);
+           obstruction.transform.Rotate(0,180,0);
            obstruction.SetActive(false);
            _bonusObjects.Add(obstruction);
        }

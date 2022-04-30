@@ -43,7 +43,7 @@ public class ObstructionGenerator : MonoBehaviour
         
         if (isBonusGenerate)
         {
-            ObstructionsBonus[0].SetObstruction(position);
+            ObstructionsBonus[Random.Range(0,ObstructionsBonus.Count)].SetObstruction(position);
             return;
         }
 
