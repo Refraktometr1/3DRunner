@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 184278498}
   - component: {fileID: 184278499}
-  - component: {fileID: 184278500}
   - component: {fileID: 184278503}
   - component: {fileID: 184278504}
   - component: {fileID: 184278505}
@@ -181,21 +180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _distanseBetwinObstruction: 10
---- !u!114 &184278500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 184278497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cccce07799965f14fac3980d424c1f12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabGameObject: {fileID: 4858782467633189147, guid: 51cb497cdbcd35a45a5af2a396cb317e, type: 3}
-  isBonus: 0
-  isStatic: 0
 --- !u!114 &184278503
 MonoBehaviour:
   m_ObjectHideFlags: 0

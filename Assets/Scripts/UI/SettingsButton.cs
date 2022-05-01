@@ -58,8 +58,22 @@ public class SettingsButton : MonoBehaviour
 
   private void OpenSettings()
   {
-    _settingsContainer.style.display = _settingsContainer.style.display ==DisplayStyle.Flex ? DisplayStyle.None : DisplayStyle.Flex;
-    Time.timeScale = Time.timeScale == 0f ? 1f : 0f;
+    bool isEnable = _settingsContainer.style.display == DisplayStyle.Flex; 
+    if (isEnable)
+    {
+      StartCoroutine(SetNormalTime());
+    }
+    else
+    {
+      Time.timeScale = 0f;
+    }
+    _settingsContainer.style.display = isEnable ? DisplayStyle.None : DisplayStyle.Flex;
   }
- 
+
+  private IEnumerator SetNormalTime()
+  {
+    yield return new WaitForSecondsRealtime(0.5f);
+    Time.timeScale = 1f;
+  }
+
 }

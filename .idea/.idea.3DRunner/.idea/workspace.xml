@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Material/UITexture/Vibration.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/main-menu.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/main-menu.uxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +107,7 @@
       <workItem from="1651309807191" duration="3887000" />
       <workItem from="1651324534129" duration="2052000" />
       <workItem from="1651327889856" duration="3555000" />
-      <workItem from="1651398724220" duration="4768000" />
+      <workItem from="1651398724220" duration="5461000" />
     </task>
     <servers />
   </component>
