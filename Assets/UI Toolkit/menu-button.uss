@@ -18,15 +18,16 @@
 }
 
 .setting-container {
-    width: 620px;
-    height: 800px;
+    width: 50%;
+    height: 25%;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 20%;
+    left: 25%;
     right: auto;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     transition-duration: 1s;
+    display: none;
 }
 
 .setting-container:disabled {
@@ -34,4 +35,31 @@
     left: -800px;
     top: 50px;
     transition-duration: 1s;
+}
+
+.setting-button-container {
+    width: 100%;
+    height: 20%;
+    margin-top: 1px;
+}
+
+.icone {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgba(255, 255, 255, 255);
+    width: 30%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    position: absolute;
+}
+
+.setting-button {
+    width: 70%;
+    height: 100%;
+    flex-direction: row;
+    left: 30%;
 }

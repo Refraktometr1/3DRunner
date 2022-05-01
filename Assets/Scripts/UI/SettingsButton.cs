@@ -10,12 +10,14 @@ using Button = UnityEngine.UI.Button;
 public class SettingsButton : MonoBehaviour
 {
   public VisualElement root;
+  private VisualElement _settingsContainer;
   private UnityEngine.UIElements.Button _settingsButton;
   private UnityEngine.UIElements.Button _speedUpButton;
   private UnityEngine.UIElements.Button _restartButton;
   private UnityEngine.UIElements.ProgressBar _resourceProgressBar; 
   public PlayerScriptableObject PlayerData;
   public PlayerResourceStorage ResourceStorage;
+  private RadioButton _radioButton;
   
   private void OnEnable()
   {
@@ -23,6 +25,7 @@ public class SettingsButton : MonoBehaviour
     _speedUpButton  = root.Q<UnityEngine.UIElements.Button>("SpeedUP");
     _restartButton  = root.Q<UnityEngine.UIElements.Button>("Restart");
     _settingsButton = root.Q<UnityEngine.UIElements.Button>("Settings");
+    _settingsContainer = root.Q<VisualElement>("setting-container");
     
     _speedUpButton.RegisterCallback<ClickEvent>(evt => SpeedUp());
     _restartButton.RegisterCallback<ClickEvent>(evt => RestartScene());
@@ -32,7 +35,7 @@ public class SettingsButton : MonoBehaviour
     _resourceProgressBar.value = ResourceStorage.Money;
     _resourceProgressBar.title = ResourceStorage.Money.ToString();
   }
-
+  
   private void Update()
   {
     if ((int)_resourceProgressBar.value != ResourceStorage.Money)
@@ -55,7 +58,8 @@ public class SettingsButton : MonoBehaviour
 
   private void OpenSettings()
   {
-    Debug.Log("OpenSettings");
-    Time.timeScale = 0f;
+    _settingsContainer.style.display = _settingsContainer.style.display ==DisplayStyle.Flex ? DisplayStyle.None : DisplayStyle.Flex;
+    Time.timeScale = Time.timeScale == 0f ? 1f : 0f;
   }
+ 
 }
