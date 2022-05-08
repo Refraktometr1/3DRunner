@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 3933306449936724947}
   - component: {fileID: 3933306449936724940}
   - component: {fileID: 3933306449936724941}
-  - component: {fileID: 3933306449936724942}
   m_Layer: 0
   m_Name: ObstructionManagerHolder
   m_TagString: Untagged
@@ -220,20 +219,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabGameObject: {fileID: 1848541578330167512, guid: f875576bc2ff544408efd1b37091eae6, type: 3}
-  isBonus: 0
-  isStatic: 0
---- !u!114 &3933306449936724942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3933306449936724957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5264015974ba2440b4ff26198be390a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabGameObject: {fileID: 5438348814075775048, guid: cebad1df1b8a2bf439fd03d9dfc30aed, type: 3}
   isBonus: 0
   isStatic: 0
