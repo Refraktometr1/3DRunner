@@ -1,7 +1,4 @@
-using System;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMoving : MonoSingleton<PlayerMoving>
 {
@@ -9,6 +6,13 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
     public Vector3 _swipeDistanse;
     private bool isDragging;
     public PlayerScriptableObject PlayerData;
+    public AudioResources Audio;
+    private AudioSource audiosource;
+
+    private void Start()
+    {
+        audiosource =  transform.gameObject.AddComponent<AudioSource>();
+    }
 
     void FixedUpdate()
     { 
@@ -80,16 +84,16 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
 
     public void Die()
     {
+        Camera.main.GetComponent<AudioSource>().Stop();
+        audiosource.PlayOneShot(Audio.Die);
         PlayerData.Speed = Vector3.zero;
-        SceneManager.LoadScene("Main");
         Debug.Log("Player Die");
     }
 
     public void Hit()
     {
         Vibration.Vibrate(250,-1,true);
-        // Handheld.Vibrate(); 
-        
+        audiosource.PlayOneShot(Audio.Hit);
         Debug.Log("Hit AAAA");
     }
 }
