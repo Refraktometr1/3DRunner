@@ -3,6 +3,37 @@
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Obstriction.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Obstriction.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Road_Lit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Road_Lit.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sky.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Sky.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Obstriction.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Sedan_v1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Sedan_v1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/EnvironmentLeft.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/EnvironmentLeft.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/EnvironmentRight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/EnvironmentRight.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gold.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gold.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gold_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gold_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gold_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gold_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gold_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Gold_5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Material_ENV/Bush.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Material_ENV/Bush.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Material_ENV/Rails.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Material_ENV/Rails.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Tile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat0.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat0.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat5.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat7.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/DemoMat7.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/TeddyDark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Demo/Materials/TeddyDark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STCore.cginc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STCore.cginc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STDefault.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STDefault.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STFunctions.cginc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STFunctions.cginc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STOutline.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STOutline.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STTransparent.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Simple Toon/Shaders/STTransparent.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +142,7 @@
       <workItem from="1652006812127" duration="977000" />
       <workItem from="1652112782735" duration="1136000" />
       <workItem from="1652510923900" duration="653000" />
-      <workItem from="1652511656962" duration="3374000" />
+      <workItem from="1652511656962" duration="4612000" />
     </task>
     <servers />
   </component>
@@ -135,24 +166,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/ObstructionGenerator.cs</url>
-          <line>49</line>
-          <properties documentPath="C:\Unity\3DRunner\Assets\Scripts\ObstructionGenerator.cs" initialLine="49" containingFunctionPresentation="method 'CreateObstruction'">
-            <startOffsets>
-              <option value="1614" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1633" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
