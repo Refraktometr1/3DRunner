@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     transition-duration: 1s;
-    display: flex;
+    display: none;
 }
 
 .setting-container:disabled {

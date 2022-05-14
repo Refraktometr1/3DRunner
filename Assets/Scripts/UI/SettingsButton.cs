@@ -34,6 +34,8 @@ public class SettingsButton : MonoBehaviour
     _resourceProgressBar = root.Q<UnityEngine.UIElements.ProgressBar>("CapacityResources");
     _resourceProgressBar.value = ResourceStorage.Money;
     _resourceProgressBar.title = ResourceStorage.Money.ToString();
+
+    _settingsContainer.style.display = DisplayStyle.None;
   }
   
   private void Update()
@@ -75,5 +77,7 @@ public class SettingsButton : MonoBehaviour
     yield return new WaitForSecondsRealtime(0.5f);
     Time.timeScale = 1f;
   }
+  
+  
 
 }

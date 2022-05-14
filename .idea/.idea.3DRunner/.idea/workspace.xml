@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/main-menu.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/main-menu.uxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +116,7 @@
       <workItem from="1652112782735" duration="1136000" />
       <workItem from="1652510923900" duration="653000" />
       <workItem from="1652511656962" duration="5836000" />
+      <workItem from="1652542777665" duration="2303000" />
     </task>
     <servers />
   </component>
