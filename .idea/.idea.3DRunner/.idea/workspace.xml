@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Click_Button.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Die.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Hit.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Music.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Pick_Buster.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Pick_Coin.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/AudioResources.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AudioResources.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMoving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMoving.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/AudioResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/AudioResources.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/main-menu.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/main-menu.uxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/../RoboRumbleHDRP/robo test/Assets/Scripts/RoboGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlayerResourceStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,10 +71,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20560">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="20560" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -117,6 +129,8 @@
       <workItem from="1652510923900" duration="653000" />
       <workItem from="1652511656962" duration="5836000" />
       <workItem from="1652542777665" duration="2303000" />
+      <workItem from="1652869028427" duration="1445000" />
+      <workItem from="1652894718840" duration="6822000" />
     </task>
     <servers />
   </component>

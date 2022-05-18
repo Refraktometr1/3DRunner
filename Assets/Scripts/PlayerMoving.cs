@@ -84,8 +84,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
 
     public void Die()
     {
-        Camera.main.GetComponent<AudioSource>().Stop();
-        audiosource.PlayOneShot(Audio.Die);
+        AudioManager.Instanse.PlaySound(Audio.Die);
         PlayerData.Speed = Vector3.zero;
         Debug.Log("Player Die");
     }
@@ -93,7 +92,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
     public void Hit()
     {
         Vibration.Vibrate(250,-1,true);
-        audiosource.PlayOneShot(Audio.Hit);
+        AudioManager.Instanse.PlaySound(Audio.Hit);
         Debug.Log("Hit AAAA");
     }
 }

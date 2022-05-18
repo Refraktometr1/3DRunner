@@ -8,15 +8,15 @@
     <ui:VisualElement name="setting-container" class="setting-container" style="height: 40%; width: 50%; left: 25%; top: 20%; display: flex;">
         <ui:VisualElement name="setting-button-container" class="setting-button-container" style="display: flex;">
             <ui:VisualElement name="icone" class="icone" style="background-image: url(&apos;project://database/Assets/Material/UITexture/Vibration.png?fileID=2800000&amp;guid=ea1dbc455ae61464ab98d8d6e7cd93f2&amp;type=3#Vibration&apos;);" />
-            <ui:Button text="Button" display-tooltip-when-elided="true" name="setting-button" class="setting-button" />
+            <ui:Button text="vibration-button" display-tooltip-when-elided="true" name="vibration-button" class="setting-button" />
         </ui:VisualElement>
         <ui:VisualElement name="setting-button-container" class="setting-button-container" style="display: flex;">
             <ui:VisualElement name="icone" class="icone" />
-            <ui:Button text="Button" display-tooltip-when-elided="true" name="setting-button" class="setting-button" />
+            <ui:Button text="music-button" display-tooltip-when-elided="true" name="music-button" class="setting-button" />
         </ui:VisualElement>
         <ui:VisualElement name="setting-button-container" class="setting-button-container" style="display: flex;">
             <ui:VisualElement name="icone" class="icone" />
-            <ui:Button text="Button" display-tooltip-when-elided="true" name="setting-button" class="setting-button" />
+            <ui:Button text="sound-button" display-tooltip-when-elided="true" name="sound-button" class="setting-button" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

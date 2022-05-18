@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: AudioResources
   m_EditorClassIdentifier: 
   Hit: {fileID: 8300000, guid: 2c75b6b5b2d18e24b96ee0b6cf792f02, type: 3}
-  Die: {fileID: 8300000, guid: 9d4d227d76d264d408f4e0870104272c, type: 3}
+  Die: {fileID: 8300000, guid: a69569d06e2eb684c9f866084fbb009f, type: 3}
+  ClickButton: {fileID: 8300000, guid: 882582f6b57c87e47be3b3a7dd8eee48, type: 3}
+  PickCoin: {fileID: 8300000, guid: 0b7e79e6789286141933ffafbf5ae4b6, type: 3}
+  PickBooster: {fileID: 8300000, guid: d74c007e04831094eb593c0493d2614d, type: 3}
