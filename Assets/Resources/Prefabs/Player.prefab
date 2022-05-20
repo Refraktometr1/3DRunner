@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 88e8059be8e0c5f469b589a24e2ff334, type: 2}
+  - {fileID: 2100000, guid: db3c1f4cf4188cb449f632e7292358d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -130,3 +130,4 @@ MonoBehaviour:
   _touchStart: {x: 0, y: 0, z: 0}
   _swipeDistanse: {x: 0, y: 0, z: 0}
   PlayerData: {fileID: 11400000, guid: fb3acb3ae06529742bc1259e7a3e85fe, type: 2}
+  Audio: {fileID: 0}
