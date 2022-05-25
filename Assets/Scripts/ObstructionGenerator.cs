@@ -17,7 +17,7 @@ public class ObstructionGenerator : MonoBehaviour
     private int _banStatic = 0;
     private int? _banRoadPositionIndex = null;
 
-    private List<int> _roadPosition = new List<int> {-3, 3, 0};
+    private List<int> _roadPosition = new List<int> {-3, 3, 0}; // first and second index used in generate static obstruction in corner line
 
 
     private void Update()
