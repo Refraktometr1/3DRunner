@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class PlayerMoving : MonoSingleton<PlayerMoving>
+public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
 {
     public Vector3 _touchStart;
     public Vector3 _swipeDistanse;
     private bool isDragging;
     public PlayerScriptableObject PlayerData;
+    public PlayerResourceStorage PlayerResource;
     public AudioResources Audio;
     private AudioSource audiosource;
 
@@ -91,6 +92,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
 
     public void Hit()
     {
+        PlayerResource.Money = (int)Mathf.Round(PlayerResource.Money * 0.75f);
         Vibration.Vibrate(250,-1,true);
         AudioManager.Instanse.PlaySound(Audio.Hit);
         Debug.Log("Hit AAAA");

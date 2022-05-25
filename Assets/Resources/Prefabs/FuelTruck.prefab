@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d913dfc12728564479a13192a67ea556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isChangeLane: 1
 --- !u!114 &2562282982812754002
 MonoBehaviour:
   m_ObjectHideFlags: 0
