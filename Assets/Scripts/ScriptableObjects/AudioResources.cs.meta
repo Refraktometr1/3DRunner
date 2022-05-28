@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5f76e2255fa16a049a81eb83979b314b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Hit: {fileID: 8300000, guid: fa39874950f36224ebe8531744010d01, type: 3}
+  - Die: {fileID: 8300000, guid: a69569d06e2eb684c9f866084fbb009f, type: 3}
+  - ClickButton: {instanceID: 0}
+  - PickCoin: {fileID: 8300000, guid: 0b7e79e6789286141933ffafbf5ae4b6, type: 3}
+  - PickBooster: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
