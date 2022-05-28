@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 8325030686894182437}
   - component: {fileID: 6083382352314967279}
   - component: {fileID: -2745577492131679511}
+  - component: {fileID: 5737844300971492088}
+  - component: {fileID: 9082076264337230704}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Untagged
@@ -187,6 +189,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChangeLane: 0
+--- !u!65 &5737844300971492088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5723081668646044986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4453058, y: 1.9347984, z: 4.6548285}
+  m_Center: {x: 0, y: 0.9673992, z: -0.051537037}
+--- !u!114 &9082076264337230704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5723081668646044986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c533c63d985d64291287bdd7fedca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dieToHitDistance: 1
 --- !u!1 &6334042939244020491
 GameObject:
   m_ObjectHideFlags: 0

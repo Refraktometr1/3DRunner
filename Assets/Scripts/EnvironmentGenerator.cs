@@ -8,7 +8,11 @@ public class EnvironmentGenerator : MonoBehaviour
     private const float _roadOffset = 20;
     private List<GameObject> _leftEnvironmentPool = new List<GameObject>();
     private List<GameObject> _rightEnvironmentPool = new List<GameObject>();
+    private List<GameObject> _tilePool = new List<GameObject>();
     private int _poolIndex;
+    private int _tilePoolIndex;
+    private Vector3 _newPositionTile;
+    private Vector3 step = Vector3.forward*120;
     void Start()
     {
        var LeftTilePrefab = Resources.Load<GameObject>("Prefabs/EnvironmentLeft");
@@ -27,6 +31,7 @@ public class EnvironmentGenerator : MonoBehaviour
        for (int i = 0; i < 12; i++)
        {
            var tile = Instantiate(tilePrefab, Vector3.forward * i*10, Quaternion.identity);
+           _tilePool.Add(tile);
        }
     }
    
@@ -41,6 +46,16 @@ public class EnvironmentGenerator : MonoBehaviour
             _poolIndex++;
             if (_poolIndex == _leftEnvironmentPool.Count)
                 _poolIndex = 0;
+        }
+        
+        if (PlayerMoving.Instanse.transform.position.z  > _tilePool[_tilePoolIndex].transform.position.z + 15)
+        {
+             _newPositionTile = _tilePool[_tilePoolIndex].transform.position + step;
+             _tilePool[_tilePoolIndex].transform.position = _newPositionTile;
+             
+             _tilePoolIndex++;
+             if (_tilePoolIndex == _tilePool.Count)
+                 _tilePoolIndex = 0;
         }
     }
     

@@ -35,7 +35,7 @@ public abstract class ObstructionPullMono : MonoBehaviour
 
        if (isFalling)
        {
-           (ObstructionGenerator.FallingObstructions ??= new List<ObstructionPullMono>()).Add(this);
+           //(ObstructionGenerator.FallingObstructions ??= new List<ObstructionPullMono>()).Add(this);
        }
        
        (ObstructionGenerator.Obstructions ??= new List<ObstructionPullMono>()).Add(this);

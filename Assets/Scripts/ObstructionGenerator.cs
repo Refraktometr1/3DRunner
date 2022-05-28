@@ -12,7 +12,7 @@ public class ObstructionGenerator : MonoBehaviour
     public static List<ObstructionPullMono> ObstructionsBonus;
     public static List<ObstructionPullMono> Obstructions;
     public static List<ObstructionPullMono> StaticObstructions;
-    public static List<ObstructionPullMono> FallingObstructions;
+    //public static List<ObstructionPullMono> FallingObstructions;
     private Vector3 step = Vector3.forward*50;
     private float _createObstructionPosition;
     private int _banStatic = 0;
@@ -56,8 +56,8 @@ public class ObstructionGenerator : MonoBehaviour
             
             _banStatic--;
 
-            position.x = _roadPositionFallingObstruction[Random.Range(0, _roadPositionFallingObstruction.Count)];
-            FallingObstructions[Random.Range(0,Obstructions.Count)].SetObstruction(position);
+            // position.x = _roadPositionFallingObstruction[Random.Range(0, _roadPositionFallingObstruction.Count)];
+            // FallingObstructions[Random.Range(0,Obstructions.Count)].SetObstruction(position);
             return;
         }
         

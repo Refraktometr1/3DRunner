@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 2138174911305876350}
   - component: {fileID: 4199788661192718260}
   - component: {fileID: -9099279966859850638}
+  - component: {fileID: 454143375525927301}
+  - component: {fileID: 8270756681276450099}
   m_Layer: 0
   m_Name: FuelTruck
   m_TagString: Untagged
@@ -189,7 +191,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d913dfc12728564479a13192a67ea556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isChangeLane: 0
+  isChangeLane: 1
+--- !u!65 &454143375525927301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2398265727635510881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4377532, y: 3.0244365, z: 4.8986335}
+  m_Center: {x: 0.015915453, y: 1.5122182, z: -0.13856506}
+--- !u!114 &8270756681276450099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2398265727635510881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c533c63d985d64291287bdd7fedca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dieToHitDistance: 1
 --- !u!1 &3050563622400408154
 GameObject:
   m_ObjectHideFlags: 0

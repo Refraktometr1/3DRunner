@@ -127,7 +127,8 @@ GameObject:
   - component: {fileID: 2381749992370670543}
   - component: {fileID: 1630997316389569642}
   - component: {fileID: 3550666244360564896}
-  - component: {fileID: -6941126002593493212}
+  - component: {fileID: 553769779397914292}
+  - component: {fileID: 897452697863544650}
   m_Layer: 0
   m_Name: Katok
   m_TagString: Untagged
@@ -207,7 +208,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-6941126002593493212
+--- !u!65 &553769779397914292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3046258894519882101}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3598368, y: 3.2866623, z: 4.7505836}
+  m_Center: {x: 0, y: 1.6499537, z: 0.09773958}
+--- !u!114 &897452697863544650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,10 +230,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3046258894519882101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d913dfc12728564479a13192a67ea556, type: 3}
+  m_Script: {fileID: 11500000, guid: 83c533c63d985d64291287bdd7fedca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isChangeLane: 0
+  dieToHitDistance: 1
 --- !u!1 &3894270679416812117
 GameObject:
   m_ObjectHideFlags: 0

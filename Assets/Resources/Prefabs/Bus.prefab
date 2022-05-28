@@ -459,6 +459,8 @@ GameObject:
   - component: {fileID: 6795476497511649118}
   - component: {fileID: 8766985200780606356}
   - component: {fileID: -1497581129883705662}
+  - component: {fileID: 5571249412077529326}
+  - component: {fileID: 1736030063928573350}
   m_Layer: 0
   m_Name: Bus
   m_TagString: Untagged
@@ -554,6 +556,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChangeLane: 0
+--- !u!65 &5571249412077529326
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109612502212532801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7136886, y: 2.801546, z: 5.008709}
+  m_Center: {x: 0, y: 1.618496, z: -0.2764809}
+--- !u!114 &1736030063928573350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109612502212532801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c533c63d985d64291287bdd7fedca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dieToHitDistance: 1
 --- !u!1 &8005627489962196915
 GameObject:
   m_ObjectHideFlags: 0

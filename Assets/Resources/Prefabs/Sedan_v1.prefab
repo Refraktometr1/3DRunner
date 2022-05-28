@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4197128492471944028}
   - component: {fileID: 2151530304117340054}
   - component: {fileID: -2132681212017581579}
+  - component: {fileID: 6296196550974559630}
+  - component: {fileID: 6528938917663908391}
   m_Layer: 0
   m_Name: Sedan_v1
   m_TagString: Untagged
@@ -97,3 +99,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChangeLane: 0
+--- !u!65 &6296196550974559630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494051366797923907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5936713, y: 2.2006276, z: 3.953837}
+  m_Center: {x: 0.0072377324, y: 1.1003138, z: 0.38064414}
+--- !u!114 &6528938917663908391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494051366797923907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c533c63d985d64291287bdd7fedca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dieToHitDistance: 1
