@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6511306432363972360}
   - component: {fileID: 5604707128463557068}
   - component: {fileID: 8658223278705276037}
+  - component: {fileID: -790451800975550420}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -130,4 +131,18 @@ MonoBehaviour:
   _touchStart: {x: 0, y: 0, z: 0}
   _swipeDistanse: {x: 0, y: 0, z: 0}
   PlayerData: {fileID: 11400000, guid: fb3acb3ae06529742bc1259e7a3e85fe, type: 2}
+  PlayerResource: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!114 &-790451800975550420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793084910865582299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d913dfc12728564479a13192a67ea556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isChangeLane: 0
