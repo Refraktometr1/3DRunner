@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/menu-button.uss?fileID=7433441132597879392&amp;guid=21b8cef5ca601d64fb9b59ae203e95a7&amp;type=3#menu-button" />
+    <ui:VisualElement name="BlockerUp" style="width: 100%; height: 5%;" />
+    <ui:Button text="SpeedUP" display-tooltip-when-elided="true" name="SpeedUP" class="menu-button" />
+    <ui:ProgressBar name="CapacityResources" low-value="0" style="height: 35px; width: 20%; position: absolute; top: 5%; left: 40%; font-size: 24px; -unity-font-style: bold;" />
+    <ui:Button text="Restart" display-tooltip-when-elided="true" name="Restart" class="menu-button" />
+    <ui:Button text="Settings" display-tooltip-when-elided="true" name="Settings" class="menu-button" />
+    <ui:VisualElement name="setting-container" class="setting-container" style="height: 40%; width: 50%; left: 25%; top: 20%; display: flex;">
+        <ui:VisualElement name="setting-button-container" class="setting-button-container" style="display: flex;">
+            <ui:VisualElement name="icone" class="icone" style="background-image: url(&apos;project://database/Assets/Material/UITexture/Vibration.png?fileID=2800000&amp;guid=ea1dbc455ae61464ab98d8d6e7cd93f2&amp;type=3#Vibration&apos;);" />
+            <ui:Button text="vibration-button" display-tooltip-when-elided="true" name="vibration-button" class="setting-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="setting-button-container" class="setting-button-container" style="display: flex;">
+            <ui:VisualElement name="icone" class="icone" />
+            <ui:Button text="music-button" display-tooltip-when-elided="true" name="music-button" class="setting-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="setting-button-container" class="setting-button-container" style="display: flex;">
+            <ui:VisualElement name="icone" class="icone" />
+            <ui:Button text="sound-button" display-tooltip-when-elided="true" name="sound-button" class="setting-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
