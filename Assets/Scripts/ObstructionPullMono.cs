@@ -9,6 +9,7 @@ public abstract class ObstructionPullMono : MonoBehaviour
     private int _index;
     public bool isBonus;
     public bool isStatic;
+    public bool isFalling;
      
     void Start()
     {
@@ -30,6 +31,11 @@ public abstract class ObstructionPullMono : MonoBehaviour
        {
            (ObstructionGenerator.StaticObstructions ??= new List<ObstructionPullMono>()).Add(this);
            return;
+       }
+
+       if (isFalling)
+       {
+           (ObstructionGenerator.FallingObstructions ??= new List<ObstructionPullMono>()).Add(this);
        }
        
        (ObstructionGenerator.Obstructions ??= new List<ObstructionPullMono>()).Add(this);

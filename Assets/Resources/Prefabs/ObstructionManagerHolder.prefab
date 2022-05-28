@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3933306449936724958}
   - component: {fileID: 3933306449936724959}
-  - component: {fileID: 3933306449936724955}
   - component: {fileID: 3933306449936724948}
   - component: {fileID: 3933306449936724949}
   - component: {fileID: 3933306449936724950}
@@ -21,6 +20,7 @@ GameObject:
   - component: {fileID: 3933306449936724947}
   - component: {fileID: 3933306449936724940}
   - component: {fileID: 3933306449936724941}
+  - component: {fileID: 6058417322709280282}
   m_Layer: 0
   m_Name: ObstructionManagerHolder
   m_TagString: Untagged
@@ -56,21 +56,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _distanseBetwinObstruction: 10
---- !u!114 &3933306449936724955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3933306449936724957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a917ba9b33ae24543925a504a68d9f79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabGameObject: {fileID: 3423915668194771912, guid: f4cd08dda48729241a2cdf581c5ff5e6, type: 3}
-  isBonus: 0
-  isStatic: 1
 --- !u!114 &3933306449936724948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +71,7 @@ MonoBehaviour:
   prefabGameObject: {fileID: 4783695525909289193, guid: 9924d0f504bd8534a9c16d1eafd73dcd, type: 3}
   isBonus: 0
   isStatic: 0
+  isFalling: 0
 --- !u!114 &3933306449936724949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +87,7 @@ MonoBehaviour:
   prefabGameObject: {fileID: 5539409049232830428, guid: a158c0ba8865b8c499c899089613063d, type: 3}
   isBonus: 0
   isStatic: 0
+  isFalling: 0
 --- !u!114 &3933306449936724950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,6 +103,7 @@ MonoBehaviour:
   prefabGameObject: {fileID: 6358716407585890555, guid: ee6b8a3db0b6a364caa26313eba21fce, type: 3}
   isBonus: 0
   isStatic: 1
+  isFalling: 0
 --- !u!114 &3933306449936724951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +119,7 @@ MonoBehaviour:
   prefabGameObject: {fileID: 1810986402005192718, guid: decdf0cd6eca2e246a588fb7ee8de287, type: 3}
   isBonus: 0
   isStatic: 0
+  isFalling: 0
 --- !u!114 &3933306449936724944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +135,7 @@ MonoBehaviour:
   prefabGameObject: {fileID: 6912089232877828906, guid: 1247bf960e26958428885ca1107d2d21, type: 3}
   isBonus: 1
   isStatic: 1
+  isFalling: 0
 --- !u!114 &3933306449936724945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +151,7 @@ MonoBehaviour:
   prefabGameObject: {fileID: 512527074169149414, guid: 9c3300a90da7b54428cefd16f25761d6, type: 3}
   isBonus: 1
   isStatic: 1
+  isFalling: 0
 --- !u!114 &3933306449936724946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +167,7 @@ MonoBehaviour:
   prefabGameObject: {fileID: 4825875891883134929, guid: f3327e6ce119cb54c9920ed21e151b6e, type: 3}
   isBonus: 1
   isStatic: 1
+  isFalling: 0
 --- !u!114 &3933306449936724947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +183,7 @@ MonoBehaviour:
   prefabGameObject: {fileID: 3051654920281993474, guid: 006cbb1dd18ec5f41854ad0c2d017189, type: 3}
   isBonus: 1
   isStatic: 1
+  isFalling: 0
 --- !u!114 &3933306449936724940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +199,7 @@ MonoBehaviour:
   prefabGameObject: {fileID: 7345710559235280241, guid: afdfa94762cbac943aaff88e0a7ea391, type: 3}
   isBonus: 0
   isStatic: 0
+  isFalling: 0
 --- !u!114 &3933306449936724941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,3 +215,20 @@ MonoBehaviour:
   prefabGameObject: {fileID: 1848541578330167512, guid: f875576bc2ff544408efd1b37091eae6, type: 3}
   isBonus: 0
   isStatic: 0
+  isFalling: 0
+--- !u!114 &6058417322709280282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3933306449936724957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5264015974ba2440b4ff26198be390a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabGameObject: {fileID: 126497871560187942, guid: f4cd08dda48729241a2cdf581c5ff5e6, type: 3}
+  isBonus: 0
+  isStatic: 1
+  isFalling: 0

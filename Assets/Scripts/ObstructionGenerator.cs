@@ -12,13 +12,14 @@ public class ObstructionGenerator : MonoBehaviour
     public static List<ObstructionPullMono> ObstructionsBonus;
     public static List<ObstructionPullMono> Obstructions;
     public static List<ObstructionPullMono> StaticObstructions;
+    public static List<ObstructionPullMono> FallingObstructions;
     private Vector3 step = Vector3.forward*50;
     private float _createObstructionPosition;
     private int _banStatic = 0;
     private int? _banRoadPositionIndex = null;
 
     private List<int> _roadPosition = new List<int> {-3, 3, 0}; // first and second index used in generate static obstruction in corner line
-
+    private List<int> _roadPositionFallingObstruction = new List<int> {-5, 5};
 
     private void Update()
     {
@@ -54,6 +55,9 @@ public class ObstructionGenerator : MonoBehaviour
                 _banRoadPositionIndex = null;
             
             _banStatic--;
+
+            position.x = _roadPositionFallingObstruction[Random.Range(0, _roadPositionFallingObstruction.Count)];
+            FallingObstructions[Random.Range(0,Obstructions.Count)].SetObstruction(position);
             return;
         }
         
@@ -64,6 +68,7 @@ public class ObstructionGenerator : MonoBehaviour
             if (position.x == 0)
                 position.x = _roadPosition[Random.Range(0, 1)];
            
+            
             StaticObstructions[Random.Range(0,StaticObstructions.Count)].SetObstruction(position);
             _banRoadPositionIndex = _roadPosition.IndexOf((int)position.x);
         }
