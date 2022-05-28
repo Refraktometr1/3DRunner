@@ -44,9 +44,9 @@ public class SettingsButton : MonoBehaviour
     _restartButton.RegisterCallback<ClickEvent>(evt => RestartScene());
     _settingsButton.RegisterCallback<ClickEvent>(ev => OpenSettings());
     
-    _soundButton.RegisterCallback<ClickEvent>(ev => SoundSettings());
-    _musicButton.RegisterCallback<ClickEvent>(ev => MusicSettings());
-    _vibrationButton.RegisterCallback<ClickEvent>(ev => VibrationSettings());
+    //_soundButton.RegisterCallback<ClickEvent>(ev => SoundSettings());
+    //_musicButton.RegisterCallback<ClickEvent>(ev => MusicSettings());
+    //_vibrationButton.RegisterCallback<ClickEvent>(ev => VibrationSettings());
     
     _resourceProgressBar = root.Q<UnityEngine.UIElements.ProgressBar>("CapacityResources");
     _resourceProgressBar.value = ResourceStorage.Money;
