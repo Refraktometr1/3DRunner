@@ -41,10 +41,11 @@ public class SettingsButton : MonoBehaviour
     
     _settingsContainer = root.Q<VisualElement>("setting-container");
     _pupUpContainer = root.Q<VisualElement>("PupUp");
+    _pupUpContainer.style.display = DisplayStyle.None;
     
     _speedUpButton.RegisterCallback<ClickEvent>(evt => SpeedUp());
     _restartButton.RegisterCallback<ClickEvent>(evt => RestartScene());
-    _settingsButton.RegisterCallback<ClickEvent>(ev => OpenSettings(_settingsContainer));
+    _settingsButton.RegisterCallback<ClickEvent>(ev => OpenClosePanel(_settingsContainer));
     
     _soundButton.RegisterCallback<ClickEvent>(ev => SoundSettings());
     _musicButton.RegisterCallback<ClickEvent>(ev => MusicSettings());
@@ -53,7 +54,7 @@ public class SettingsButton : MonoBehaviour
     _pupUpContainer.RegisterCallback<ClickEvent>((e) =>
     {
       e.StopImmediatePropagation();
-      OpenSettings(_pupUpContainer);
+      OpenClosePanel(_pupUpContainer);
     });
     
     _resourceProgressBar = root.Q<UnityEngine.UIElements.ProgressBar>("CapacityResources");
@@ -100,7 +101,7 @@ public class SettingsButton : MonoBehaviour
     SceneManager.LoadScene("Main");
   }
 
-  private void OpenSettings(VisualElement panel)
+  private void OpenClosePanel(VisualElement panel)
   {
     AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
     bool isEnable = panel.style.display == DisplayStyle.Flex; 

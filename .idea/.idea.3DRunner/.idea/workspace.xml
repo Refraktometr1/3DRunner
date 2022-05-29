@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/SaveSettings.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/SaveSettings.uxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +118,7 @@
       <workItem from="1652869028427" duration="1445000" />
       <workItem from="1652894718840" duration="6822000" />
       <workItem from="1653726890089" duration="3449000" />
-      <workItem from="1653828002944" duration="4146000" />
+      <workItem from="1653828002944" duration="5540000" />
     </task>
     <servers />
   </component>
@@ -151,19 +147,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/EnvironmentGenerator.cs</url>
-          <line>52</line>
-          <properties documentPath="C:\Unity\3DRunner\Assets\Scripts\EnvironmentGenerator.cs" initialLine="52" containingFunctionPresentation="method 'Update'">
-            <startOffsets>
-              <option value="2387" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2458" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/DoMove.cs</url>
           <line>24</line>
           <properties documentPath="C:\Unity\3DRunner\Assets\Scripts\DoMove.cs" initialLine="23" containingFunctionPresentation="method 'ChangeLine'">
@@ -178,13 +161,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/UI/SettingsButton.cs</url>
-          <line>104</line>
+          <line>105</line>
           <properties documentPath="C:\Unity\3DRunner\Assets\Scripts\UI\SettingsButton.cs" initialLine="104" containingFunctionPresentation="method 'OpenSettings'">
             <startOffsets>
-              <option value="3635" />
+              <option value="3690" />
             </startOffsets>
             <endOffsets>
-              <option value="3696" />
+              <option value="3751" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
