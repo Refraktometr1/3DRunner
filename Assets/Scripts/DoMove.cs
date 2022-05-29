@@ -5,11 +5,9 @@ public class DoMove : MonoBehaviour
 {
     private int _speed = 10;
     public bool isChangeLane;
-    private int _swipeDistance = 20;
+    private int _swipeDistance = 25;
     private bool isChanged;
     
-
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector3.forward * _speed * Time.deltaTime);
@@ -17,6 +15,9 @@ public class DoMove : MonoBehaviour
         {
             ChangeLine();
         }
+
+        if (transform.position.z < PlayerMoving.Instanse.transform.position.z - _swipeDistance)
+            isChanged = false;
     }
 
     private void ChangeLine()

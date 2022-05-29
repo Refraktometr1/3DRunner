@@ -82,3 +82,13 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+
+.PupUp {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    background-color: rgba(166, 70, 70, 255);
+}

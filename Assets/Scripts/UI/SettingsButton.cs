@@ -11,6 +11,8 @@ public class SettingsButton : MonoBehaviour
 {
   public VisualElement root;
   private VisualElement _settingsContainer;
+  private VisualElement _pupUpContainer;
+  
   private UnityEngine.UIElements.Button _settingsButton;
   private UnityEngine.UIElements.Button _speedUpButton;
   private UnityEngine.UIElements.Button _restartButton;
@@ -38,15 +40,21 @@ public class SettingsButton : MonoBehaviour
     _vibrationButton = root.Q<UnityEngine.UIElements.Button>("vibration-button");
     
     _settingsContainer = root.Q<VisualElement>("setting-container");
-    
+    _pupUpContainer = root.Q<VisualElement>("PupUp");
     
     _speedUpButton.RegisterCallback<ClickEvent>(evt => SpeedUp());
     _restartButton.RegisterCallback<ClickEvent>(evt => RestartScene());
-    _settingsButton.RegisterCallback<ClickEvent>(ev => OpenSettings());
+    _settingsButton.RegisterCallback<ClickEvent>(ev => OpenSettings(_settingsContainer));
     
     _soundButton.RegisterCallback<ClickEvent>(ev => SoundSettings());
     _musicButton.RegisterCallback<ClickEvent>(ev => MusicSettings());
     _vibrationButton.RegisterCallback<ClickEvent>(ev => VibrationSettings());
+    
+    _pupUpContainer.RegisterCallback<ClickEvent>((e) =>
+    {
+      e.StopImmediatePropagation();
+      OpenSettings(_pupUpContainer);
+    });
     
     _resourceProgressBar = root.Q<UnityEngine.UIElements.ProgressBar>("CapacityResources");
     _resourceProgressBar.value = ResourceStorage.Money;
@@ -92,10 +100,10 @@ public class SettingsButton : MonoBehaviour
     SceneManager.LoadScene("Main");
   }
 
-  private void OpenSettings()
+  private void OpenSettings(VisualElement panel)
   {
     AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
-    bool isEnable = _settingsContainer.style.display == DisplayStyle.Flex; 
+    bool isEnable = panel.style.display == DisplayStyle.Flex; 
     if (isEnable)
     {
       StartCoroutine(SetNormalTime());
@@ -104,7 +112,7 @@ public class SettingsButton : MonoBehaviour
     {
       Time.timeScale = 0f;
     }
-    _settingsContainer.style.display = isEnable ? DisplayStyle.None : DisplayStyle.Flex;
+    panel.style.display = isEnable ? DisplayStyle.None : DisplayStyle.Flex;
   }
 
   private void SoundSettings()
