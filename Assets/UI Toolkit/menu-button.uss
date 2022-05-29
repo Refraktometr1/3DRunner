@@ -89,6 +89,6 @@
     top: 25%;
     width: 50%;
     height: 30%;
-    display: flex;
-    background-color: rgba(166, 70, 70, 255);
+    display: none;
+    background-color: rgb(166, 70, 70);
 }

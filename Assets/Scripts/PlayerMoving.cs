@@ -71,7 +71,6 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
         {
             transform.position = transform.position + Vector3.right * 3;
         }
-        Debug.Log("SwipeRight");
     }
     
     private void SwipeLeft()
@@ -80,7 +79,6 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
         {
             transform.position = transform.position + Vector3.left * 3;
         }
-        Debug.Log("SwipeLeft");
     }
 
     public void Die()
