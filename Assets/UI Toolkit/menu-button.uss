@@ -40,47 +40,56 @@
 .setting-button-container {
     width: 100%;
     height: 20%;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: none;
 }
 
 .icone {
     background-color: rgba(0, 0, 0, 0);
     -unity-background-image-tint-color: rgb(255, 255, 255);
-    width: 30%;
+    width: 25%;
     height: 100%;
-    left: 0;
+    left: 10%;
     top: 0;
     border-left-width: 1px;
     border-right-width: 1px;
     border-top-width: 1px;
     border-bottom-width: 1px;
     position: absolute;
+    margin-left: 0;
 }
 
 .setting-button {
-    width: 70%;
-    height: 100%;
+    width: 30%;
+    height: 60%;
     flex-direction: row;
-    left: 30%;
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
+    left: 55%;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
     border-left-color: rgb(255, 244, 244);
     border-right-color: rgb(255, 244, 244);
     border-top-color: rgb(255, 244, 244);
     border-bottom-color: rgb(255, 244, 244);
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     background-color: rgb(32, 209, 0);
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    right: auto;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 .PupUp {
