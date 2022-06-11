@@ -23,8 +23,16 @@ public class SettingsButton : MonoBehaviour
   public PlayerScriptableObject PlayerData;
   public PlayerResourceStorage ResourceStorage;
   private AudioResources _audioResources;
+  private Color _greenColor; 
+  private Color _grayColor; 
   
-  
+
+  private void Awake()
+  {
+    ColorUtility.TryParseHtmlString("#59C251", out _greenColor);
+    ColorUtility.TryParseHtmlString("#767676", out _grayColor);
+  }
+
   private void OnEnable()
   {
     _audioResources =  Resources.Load<AudioResources>("AudioResources");
@@ -88,12 +96,12 @@ public class SettingsButton : MonoBehaviour
     if (isOn)
     {
       button.style.justifyContent = new StyleEnum<Justify>(Justify.FlexEnd);
-      button.style.backgroundColor = new StyleColor(Color.grey);
+      button.style.backgroundColor = new StyleColor(_grayColor);                     
     }
     else
     {
       button.style.justifyContent = new StyleEnum<Justify>(Justify.FlexStart);
-      button.style.backgroundColor = new StyleColor(Color.green);
+      button.style.backgroundColor = new StyleColor(_greenColor);
     }
   }
 
