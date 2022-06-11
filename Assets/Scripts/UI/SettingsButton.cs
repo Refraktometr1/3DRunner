@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
@@ -25,7 +23,6 @@ public class SettingsButton : MonoBehaviour
   public PlayerScriptableObject PlayerData;
   public PlayerResourceStorage ResourceStorage;
   private AudioResources _audioResources;
-  private RadioButton _radioButton;
   
   
   private void OnEnable()
@@ -66,18 +63,41 @@ public class SettingsButton : MonoBehaviour
 
   private void VibrationSettings()
   {
-    AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
     Vibration.Vibrate(30,100,true);
     Vibration.isVibrationOff = !Vibration.isVibrationOff;
-    Vibration.Vibrate(30,100,true);
+    SwitchButton(_vibrationButton, Vibration.isVibrationOff);
+  }
+  
+  private void MusicSettings()
+  {
+    bool isMusicOff = AudioManager.Instanse.MusicOff();
+    SwitchButton(_musicButton, isMusicOff);
+  }
+  
+  private void SoundSettings()
+  {
+    AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
+    AudioManager.Instanse.isSoundOff = !AudioManager.Instanse.isSoundOff;
+    SwitchButton(_soundButton,  AudioManager.Instanse.isSoundOff);
   }
 
-  private void MusicSettings()
+  private void SwitchButton(UnityEngine.UIElements.Button button, bool isOn)
   {
     AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
     Vibration.Vibrate(30,100,true);
-    AudioManager.Instanse.MusicOff();
+    if (isOn)
+    {
+      button.style.justifyContent = new StyleEnum<Justify>(Justify.FlexEnd);
+      button.style.backgroundColor = new StyleColor(Color.grey);
+    }
+    else
+    {
+      button.style.justifyContent = new StyleEnum<Justify>(Justify.FlexStart);
+      button.style.backgroundColor = new StyleColor(Color.green);
+    }
   }
+
+  
 
   private void Update()
   {
@@ -116,13 +136,7 @@ public class SettingsButton : MonoBehaviour
     panel.style.display = isEnable ? DisplayStyle.None : DisplayStyle.Flex;
   }
 
-  private void SoundSettings()
-  {
-    AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
-    Vibration.Vibrate(30,100,true);
-    AudioManager.Instanse.isSoundOff = !AudioManager.Instanse.isSoundOff;
-    AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
-  }
+ 
 
   private IEnumerator SetNormalTime()
   {

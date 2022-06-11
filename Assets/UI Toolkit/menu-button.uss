@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     transition-duration: 1s;
-    display: none;
+    display: flex;
 }
 
 .setting-container:disabled {
@@ -82,14 +82,14 @@
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     top: 20%;
     right: auto;
-    transition-property: background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+    transition-property: background-color, justify-content;
+    transition-duration: 400ms, 400ms;
+    transition-timing-function: ease, ease-in-out-elastic;
+    transition-delay: initial;
 }
 
 .PupUp {
@@ -100,4 +100,16 @@
     height: 30%;
     display: none;
     background-color: rgb(166, 70, 70);
+}
+
+.circle_in_setting_button {
+    width: 30%;
+    height: 80%;
+    flex-direction: row;
+    background-image: url('project://database/Assets/Material/UITexture/Circle.png?fileID=2800000&guid=f126001274daddd41b661ebc2e99eab4&type=3#Circle');
+    left: auto;
+    right: auto;
+    align-items: flex-start;
+    margin-left: 5%;
+    margin-right: 5%;
 }
