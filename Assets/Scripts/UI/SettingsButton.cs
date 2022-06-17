@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
@@ -25,9 +23,16 @@ public class SettingsButton : MonoBehaviour
   public PlayerScriptableObject PlayerData;
   public PlayerResourceStorage ResourceStorage;
   private AudioResources _audioResources;
-  private RadioButton _radioButton;
+  private Color _greenColor; 
+  private Color _grayColor; 
   
-  
+
+  private void Awake()
+  {
+    ColorUtility.TryParseHtmlString("#59C251", out _greenColor);
+    ColorUtility.TryParseHtmlString("#767676", out _grayColor);
+  }
+
   private void OnEnable()
   {
     _audioResources =  Resources.Load<AudioResources>("AudioResources");
@@ -66,18 +71,41 @@ public class SettingsButton : MonoBehaviour
 
   private void VibrationSettings()
   {
-    AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
     Vibration.Vibrate(30,100,true);
     Vibration.isVibrationOff = !Vibration.isVibrationOff;
-    Vibration.Vibrate(30,100,true);
+    SwitchButton(_vibrationButton, Vibration.isVibrationOff);
+  }
+  
+  private void MusicSettings()
+  {
+    bool isMusicOff = AudioManager.Instanse.MusicOff();
+    SwitchButton(_musicButton, isMusicOff);
+  }
+  
+  private void SoundSettings()
+  {
+    AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
+    AudioManager.Instanse.isSoundOff = !AudioManager.Instanse.isSoundOff;
+    SwitchButton(_soundButton,  AudioManager.Instanse.isSoundOff);
   }
 
-  private void MusicSettings()
+  private void SwitchButton(UnityEngine.UIElements.Button button, bool isOn)
   {
     AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
     Vibration.Vibrate(30,100,true);
-    AudioManager.Instanse.MusicOff();
+    if (isOn)
+    {
+      button.style.justifyContent = new StyleEnum<Justify>(Justify.FlexEnd);
+      button.style.backgroundColor = new StyleColor(_grayColor);                     
+    }
+    else
+    {
+      button.style.justifyContent = new StyleEnum<Justify>(Justify.FlexStart);
+      button.style.backgroundColor = new StyleColor(_greenColor);
+    }
   }
+
+  
 
   private void Update()
   {
@@ -116,13 +144,7 @@ public class SettingsButton : MonoBehaviour
     panel.style.display = isEnable ? DisplayStyle.None : DisplayStyle.Flex;
   }
 
-  private void SoundSettings()
-  {
-    AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
-    Vibration.Vibrate(30,100,true);
-    AudioManager.Instanse.isSoundOff = !AudioManager.Instanse.isSoundOff;
-    AudioManager.Instanse.PlaySound(_audioResources.ClickButton);
-  }
+ 
 
   private IEnumerator SetNormalTime()
   {

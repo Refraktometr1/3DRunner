@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/menu-button.uss?fileID=7433441132597879392&amp;guid=21b8cef5ca601d64fb9b59ae203e95a7&amp;type=3#menu-button" />
+    <ui:VisualElement name="Background" style="width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/Material/UITexture/MarcketBackground.png?fileID=2800000&amp;guid=0b1c00f9769cd584496b70ac6c478f74&amp;type=3#MarcketBackground&apos;); align-items: flex-start; flex-shrink: 1;">
+        <ui:VisualElement name="Head" style="height: 20%; width: 100%;" />
+        <ui:VisualElement name="Body1" style="height: 40%; width: 100%; justify-content: center; align-items: center;">
+            <ui:VisualElement name="CarViewer" style="height: 450px; width: 478px; background-image: url(&apos;project://database/Assets/Material/UITexture/ModelForMarcket.renderTexture?fileID=8400000&amp;guid=265737460d1c9b3428596c90743b9423&amp;type=2#ModelForMarcket&apos;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Body2" style="height: 194px; width: 1427px; flex-direction: row; align-items: center; left: auto;">
+            <ui:VisualElement class="car-button" style="width: 224px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Buttons" style="height: 20%; width: 100%;" />
+    </ui:VisualElement>
+</ui:UXML>

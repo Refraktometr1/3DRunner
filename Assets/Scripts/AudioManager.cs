@@ -7,7 +7,7 @@ public class AudioManager : MonoSingleton<AudioManager>
 {
     public AudioSource AudioSource;
     public AudioSource MusicSource;
-    public bool isMusicOn;
+    private bool isMusicOn;
     public bool isSoundOff;
 
     public void PlaySound(AudioClip audioClip)
@@ -18,9 +18,10 @@ public class AudioManager : MonoSingleton<AudioManager>
         AudioSource.PlayOneShot(audioClip);
     }
 
-    public void MusicOff()
+    public bool MusicOff()
     {
         isMusicOn = !isMusicOn;
         MusicSource.mute = isMusicOn;
+        return isMusicOn;
     }
 }
