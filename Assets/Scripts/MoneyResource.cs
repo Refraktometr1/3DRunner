@@ -16,7 +16,7 @@ public class MoneyResource : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if ( other.name != "Player")
+        if ( other.name != "PlayerMainScene")
             return;
         AudioManager.Instanse.PlaySound(_audioResources.PickCoin);
         _playerResource.Money += BonusValue;

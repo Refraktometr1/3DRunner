@@ -8,12 +8,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
     public PlayerScriptableObject PlayerData;
     public PlayerResourceStorage PlayerResource;
     public AudioResources Audio;
-    private AudioSource audiosource;
 
-    private void Start()
-    {
-        audiosource =  transform.gameObject.AddComponent<AudioSource>();
-    }
 
     void FixedUpdate()
     { 
@@ -22,16 +17,6 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
 
     private void Update()
     {
-        // Ray rey = Camera.main.ScreenPointToRay(Input.mousePosition);
-        // if (Physics.Raycast(rey, out RaycastHit reycastHit))
-        // {
-        //     if (3 >= reycastHit.point.z && reycastHit.point.z>= -3f)
-        //     {
-        //         var posinion  = transform.position;
-        //         posinion.z = reycastHit.point.z;
-        //         transform.position = posinion;
-        //     }
-        // }
         if (Input.GetMouseButtonDown(0))
         {
              isDragging = true;
