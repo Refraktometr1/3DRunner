@@ -5,11 +5,7 @@ using System.IO;
 
 public class SaveLoadSystem : MonoBehaviour
 {
-    private void Awake()
-    {
-        //var sc = Resources.Load<PlayerResourceStorage>("PlayerResourceStorage");
-       // sc.LoadData();
-    }
+   
     private void OnDisable()
     {
         var playerResourceStorage = Resources.Load<PlayerResourceStorage>("PlayerResourceStorage");

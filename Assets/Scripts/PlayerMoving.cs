@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
 {
-    public Vector3 _touchStart;
-    public Vector3 _swipeDistanse;
+    private Vector3 _touchStart;
+    private Vector3 _swipeDistanse;
     private bool isDragging;
     public PlayerScriptableObject PlayerData;
     public PlayerResourceStorage PlayerResource;
