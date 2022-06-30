@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/carButton.uxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/carButton.uxml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCars.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCars/Empty.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCars/Empty.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCars/PlayerCar1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCars/PlayerCar1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCars/PlayerCar2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCars/PlayerCar2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCarsData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCarsData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlayerCarsData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CarModels.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/CarModels.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/PlayerPrefabs/PickUp_LV1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/PlayerPrefabs/PickUp_LV1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/PlayerPrefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/PlayerPrefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlayerModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerModel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlayerModel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CarModelsScriptable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CarModelsScriptable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlayerCarsData.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MarketUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MarketUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +42,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd953b8fb97946ec96d4a808bc44e727128c00/51/c0cf5968/Justify.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlayerResourceStorage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d8d38b92d94a4ff8a91e61d39c6d19cd15d000/fe/301e65bb/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cd953b8fb97946ec96d4a808bc44e727128c00/57/28d150af/StyleEnum`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -62,10 +78,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11164">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="11164" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -130,6 +146,7 @@
       <workItem from="1656141651855" duration="5283000" />
       <workItem from="1656516182455" duration="2391000" />
       <workItem from="1656525685090" duration="1249000" />
+      <workItem from="1656602893167" duration="5582000" />
     </task>
     <servers />
   </component>
@@ -169,6 +186,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/MarketUI.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Unity\3DRunner\Assets\Scripts\UI\MarketUI.cs" initialLine="26" containingFunctionPresentation="method 'Start'">
+            <startOffsets>
+              <option value="806" />
+            </startOffsets>
+            <endOffsets>
+              <option value="894" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

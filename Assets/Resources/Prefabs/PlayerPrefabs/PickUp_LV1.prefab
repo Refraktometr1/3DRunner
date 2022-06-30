@@ -2140,7 +2140,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8265205419744345960}
   - component: {fileID: -4017342124884683119}
-  - component: {fileID: 9178429254531269738}
   m_Layer: 0
   m_Name: PickUp_LV1
   m_TagString: Untagged
@@ -2197,22 +2196,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9178429254531269738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8788836405818090962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e713e204f3b76a42abf28a5a20cc9bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerGameObject: {fileID: 8788836405818090962}
-  isOpen: 0
-  isActive: 0
-  price: 500
 --- !u!1 &8831169513281745704
 GameObject:
   m_ObjectHideFlags: 0

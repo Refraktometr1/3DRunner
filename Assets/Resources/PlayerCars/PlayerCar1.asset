@@ -18,4 +18,4 @@ MonoBehaviour:
   price: 0
   name: BrrrBrr
   capacity: 20
-  imageUI: {fileID: 0}
+  imageUI: {fileID: 8400000, guid: 265737460d1c9b3428596c90743b9423, type: 2}

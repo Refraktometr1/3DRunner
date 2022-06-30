@@ -18,4 +18,4 @@ MonoBehaviour:
   price: 100
   name: PickUp
   capacity: 50
-  imageUI: {fileID: 0}
+  imageUI: {fileID: 2800000, guid: e7600337250513145a1199d23846b277, type: 3}

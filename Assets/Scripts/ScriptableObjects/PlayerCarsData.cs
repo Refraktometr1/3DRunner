@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "PlayerModelsCar", menuName = "ScriptableObjects/PlayerModelsCar") ]
-public class PlayerModelsCar : ScriptableObject
+[CreateAssetMenu(fileName = "PlayerCarsData", menuName = "ScriptableObjects/PlayerCarsData") ]
+public class PlayerCarsData : ScriptableObject
 {
-    public List<PlayerModel> models;
+    public List<PlayerModel> Data;
 }

@@ -8,7 +8,7 @@ using Button = UnityEngine.UI.Button;
 public class MarketUI : MonoBehaviour
 {
    public VisualTreeAsset CarPrefabTemplate;
-   private CarModelsScriptable CarModels;
+   private PlayerCarsData _playerCarsData;
    private VisualElement _root;
    private VisualElement _carButtonsContainer;
    private VisualElement _carButton;
@@ -17,13 +17,17 @@ public class MarketUI : MonoBehaviour
 
    private void Start()
    {
-      CarModels = Resources.Load<CarModelsScriptable>("CarModels");
+      _playerCarsData = Resources.Load<PlayerCarsData>("PlayerCarsData");
       _root = gameObject.GetComponent<UIDocument>().rootVisualElement;
       _carButtonsContainer  = _root.Q<VisualElement>("CarButtonsContainer");
-      VisualElement _template = CarPrefabTemplate.CloneTree();
-      
-      _carButton = _template.Q<VisualElement>("CarTemplate");
-      _carButtonsContainer.Add(_carButton);
+
+      for (int i = 1; i < _playerCarsData.Data.Count; i++)
+      {
+         VisualElement _template = CarPrefabTemplate.CloneTree();
+         _carButton = _template.Q<VisualElement>("CarTemplate");
+         _carButtonsContainer.Add(_carButton);
+         _carButton.style.backgroundImage = new StyleBackground(_playerCarsData.Data[i].imageUI);
+      }
    }
 
    private void CarButtonCreater()
