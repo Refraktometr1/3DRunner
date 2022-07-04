@@ -61,8 +61,8 @@
 }
 
 .setting-button {
-    width: 30%;
-    height: 60%;
+    width: 15%;
+    height: 20%;
     flex-direction: row;
     left: 55%;
     border-left-width: 0;
@@ -90,6 +90,7 @@
     transition-duration: 300ms, 300ms;
     transition-timing-function: ease, ease-in-out-elastic;
     transition-delay: initial;
+    background-image: resource('Prefabs/PlayerPrefabs/17-179539_small-blue-circle-transparent-background');
 }
 
 .PupUp {
@@ -115,6 +116,8 @@
 }
 
 .car-button {
-    width: 30%;
-    height: 80%;
+    width: 50px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 255);
+    background-image: resource('Prefabs/PlayerPrefabs/17-179539_small-blue-circle-transparent-background');
 }

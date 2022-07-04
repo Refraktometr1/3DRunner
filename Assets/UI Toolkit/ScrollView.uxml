@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:ScrollView mode="Horizontal" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="AlwaysVisible" name="ScrolCarBatton" style="height: 487px;">
+            <ui:VisualElement style="flex-grow: 0; height: auto; width: 700px; flex-shrink: 1;" />
+            <ui:VisualElement style="flex-grow: 0; height: auto; width: 700px;" />
+            <ui:VisualElement style="flex-grow: 0; height: auto; width: 700px;" />
+            <ui:VisualElement style="flex-grow: 0; height: auto; width: 700px;" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

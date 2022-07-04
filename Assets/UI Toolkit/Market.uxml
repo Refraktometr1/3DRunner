@@ -5,9 +5,7 @@
         <ui:VisualElement name="Body1" style="height: 40%; width: 100%; justify-content: center; align-items: center;">
             <ui:VisualElement name="CarViewer" style="height: 450px; width: 478px; background-image: url(&apos;project://database/Assets/Material/UITexture/ModelForMarcket.renderTexture?fileID=8400000&amp;guid=265737460d1c9b3428596c90743b9423&amp;type=2#ModelForMarcket&apos;);" />
         </ui:VisualElement>
-        <ui:VisualElement name="CarButtonsContainer" style="height: 194px; width: 1427px; flex-direction: row; align-items: center; left: auto;">
-            <ui:VisualElement name="CarButton" class="car-button" style="width: 224px; background-image: url(&apos;project://database/Assets/Material/UITexture/ModelForMarcket.renderTexture?fileID=8400000&amp;guid=265737460d1c9b3428596c90743b9423&amp;type=2#ModelForMarcket&apos;);" />
-        </ui:VisualElement>
+        <ui:VisualElement name="CarButtonsContainer" style="height: 194px; width: auto; flex-direction: row; align-items: center; left: auto;" />
         <ui:VisualElement name="Buttons" style="height: 20%; width: 100%;" />
     </ui:VisualElement>
 </ui:UXML>
