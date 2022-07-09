@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="219d5dfb-9b9c-4d7f-ab41-98b2db1c2e7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/PlayerPrefabs/17-179539_small-blue-circle-transparent-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/PlayerPrefabs/17-179539_small-blue-circle-transparent-background.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CarMaterials.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CarMaterials.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/ScrollView.uxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI Toolkit/ScrollView.uxml.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MarketCarGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MarketCarGenerator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3DRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCars/PlayerCar1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCars/PlayerCar1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCars/Empty.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCars/Empty.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PlayerCarsData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/PlayerCarsData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlayerCarsData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/PlayerCarsData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CarMaterials.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CarMaterials.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MarketUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MarketUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/Market.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/Market.uxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/carButton.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/carButton.uxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Toolkit/menu-button.uss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +137,8 @@
       <workItem from="1656516182455" duration="2391000" />
       <workItem from="1656525685090" duration="1249000" />
       <workItem from="1656602893167" duration="6678000" />
-      <workItem from="1656959636964" duration="3802000" />
+      <workItem from="1656959636964" duration="4379000" />
+      <workItem from="1657350183189" duration="2876000" />
     </task>
     <servers />
   </component>

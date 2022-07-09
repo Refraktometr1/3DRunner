@@ -6,5 +6,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerCarsData", menuName = "ScriptableObjects/PlayerCarsData") ]
 public class PlayerCarsData : ScriptableObject
 {
-    public List<PlayerModel> Data;
+    public List<PlayerModel> Cars;
+    public List<Material> Materials;
 }
