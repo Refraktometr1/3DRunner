@@ -1,14 +1,13 @@
+using System.Linq;
 using UnityEngine;
 
-public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
+public class PlayerMoving : MonoSingleton<PlayerMoving>
 {
     private Vector3 _touchStart;
     private Vector3 _swipeDistanse;
-    private bool isDragging;
+    private bool _isDragging;
+    
     public PlayerScriptableObject PlayerData;
-    public PlayerResourceStorage PlayerResource;
-    public AudioResources Audio;
-
 
     void FixedUpdate()
     { 
@@ -19,7 +18,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
     {
         if (Input.GetMouseButtonDown(0))
         {
-             isDragging = true;
+             _isDragging = true;
              _touchStart = Input.mousePosition;
         }
         else if (Input.GetMouseButtonUp(0))
@@ -27,7 +26,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
             Reset();
         }
 
-        if (!isDragging)
+        if (!_isDragging)
             return;
 
         _swipeDistanse = Input.mousePosition - _touchStart;
@@ -47,7 +46,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
     private void Reset()
     {
             _touchStart = Vector3.zero;
-            isDragging = false;
+            _isDragging = false;
     }
 
     private void SwipeRight()
@@ -64,20 +63,5 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>,  IDamageable
         {
             transform.position = transform.position + Vector3.left * 3;
         }
-    }
-
-    public void Die()
-    {
-        AudioManager.Instanse.PlaySound(Audio.Die);
-        PlayerData.Speed = Vector3.zero;
-        Debug.Log("Player Die");
-    }
-
-    public void Hit()
-    {
-        PlayerResource.Money = (int)Mathf.Round(PlayerResource.Money * 0.75f);
-        Vibration.Vibrate(250,-1,true);
-        AudioManager.Instanse.PlaySound(Audio.Hit);
-        Debug.Log("Hit AAAA");
     }
 }

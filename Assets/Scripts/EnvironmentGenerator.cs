@@ -37,6 +37,7 @@ public class EnvironmentGenerator : MonoBehaviour
    
     void Update()
     {
+      
         if ( PlayerMoving.Instanse.transform.position.z > _leftEnvironmentPool[_poolIndex].transform.position.z + 25)
         {
             var offset =  _leftEnvironmentPool[_poolIndex].transform.position.z + _tileDimension.x * (_leftEnvironmentPool.Count);

@@ -11,10 +11,11 @@ public class MarketCarGenerator : MonoBehaviour
     void Start()
     {
         _playerCarsData = Resources.Load<PlayerCarsData>("PlayerCarsData");
+        //_carOnScene.GetComponent<MeshRenderer>().materials[0].
     }
 
     private void OnEnable()
     {
-        _carOnScene = Instantiate(_playerCarsData.Cars.);
+        //_carOnScene = Instantiate(_playerCarsData.Cars.);
     }
 }

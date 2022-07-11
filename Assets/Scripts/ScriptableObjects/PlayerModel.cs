@@ -10,7 +10,7 @@ public class PlayerModel : ScriptableObject
    public bool isOpen;
    public bool isActive;
    public int price;
-   public string name;
+   public string nameText;
    public int capacity;
-   public Texture2D imageUI;
+   public Color bodyColor;
 }

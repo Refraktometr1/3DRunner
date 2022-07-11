@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class MoneyResource : MonoBehaviour
 {
-    public PlayerResourceStorage _playerResource;
     public int BonusValue;
     private AudioResources _audioResources;
 
@@ -16,10 +15,12 @@ public class MoneyResource : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if ( other.name != "PlayerMainScene")
+        IResourceCollector collector = other.GetComponent<IResourceCollector>();
+        if ( collector == null )
             return;
+        
+        collector.Collect(BonusValue);
         AudioManager.Instanse.PlaySound(_audioResources.PickCoin);
-        _playerResource.Money += BonusValue;
         transform.gameObject.SetActive(false);
     }
 }
