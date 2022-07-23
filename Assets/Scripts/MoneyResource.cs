@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoneyResource : MonoBehaviour
@@ -19,8 +16,8 @@ public class MoneyResource : MonoBehaviour
         if ( collector == null )
             return;
         
-        collector.Collect(BonusValue);
+        collector.Collect(BonusValue, transform.gameObject);
         AudioManager.Instanse.PlaySound(_audioResources.PickCoin);
-        transform.gameObject.SetActive(false);
+        //transform.gameObject.SetActive(false);
     }
 }
