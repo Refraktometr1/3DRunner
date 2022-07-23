@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMoving : MonoSingleton<PlayerMoving>
@@ -52,15 +53,46 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
     {
         if (transform.position.x < 3)
         {
-            transform.position = transform.position + Vector3.right * 3;
+            StartCoroutine(CorutineDoMove(transform.position + Vector3.right * 3, false));
         }
     }
     
     private void SwipeLeft()
     {
+        
         if (transform.position.x > -3)
         {
-            transform.position = transform.position + Vector3.left * 3;
+            StartCoroutine(CorutineDoMove(transform.position + Vector3.left * 3 , true));
+        }
+    }
+
+    private IEnumerator CorutineDoMove(Vector3 moveTo, bool isLeft)
+    {
+        var roadPosition = 0;
+        if (moveTo.x > 2)
+        {
+            roadPosition = 3;
+        }
+        else if(moveTo.x < -2)
+        {
+            roadPosition = -3;
+        }
+
+        if (isLeft)
+        {
+            while (transform.position.x > roadPosition)
+            {
+                transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.left*14, Time.deltaTime);
+                yield return null;
+            }
+        }
+        else 
+        {
+            while (transform.position.x < roadPosition)
+            {
+                transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.right*14, Time.deltaTime);
+                yield return null;
+            }
         }
     }
 }

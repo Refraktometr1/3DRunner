@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BezierCurveAnimation : MonoBehaviour
@@ -21,14 +20,19 @@ public class BezierCurveAnimation : MonoBehaviour
     private IEnumerator AnimatorMove(GameObject movedGameObject,  GameObject endPositionGO, float animationTime)
     {
         var startOffset = movedGameObject.transform.position - endPositionGO.transform.position;
+        
         while (movedGameObject.transform.position != endPositionGO.transform.position)
         {
             _elapsedTime += Time.deltaTime;
             var percentageComplete =  _elapsedTime / animationTime;
+
+            var p1 = startOffset.x < 0
+                ? endPositionGO.transform.position + _firstPointOffset
+                : endPositionGO.transform.position + Vector3.Reflect(_firstPointOffset, Vector3.right);
             
            movedGameObject.transform.position = BezierCurvePoint
            (endPositionGO.transform.position + startOffset,
-               endPositionGO.transform.position + _firstPointOffset,
+               p1,
                endPositionGO.transform.position + _secondPointOffset,
                endPositionGO.transform.position,
                curve.Evaluate(percentageComplete) 
@@ -52,11 +56,16 @@ public class BezierCurveAnimation : MonoBehaviour
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
+        
+        var a = Vector3.Reflect(_firstPointOffset, Vector3.forward);
         for (float i = 0; i < 1; i+= 0.05f)
         {
+            var p1 = _startOffsetForGizmos.x < 0
+                ? transform.position + _firstPointOffset
+                : transform.position + Vector3.Reflect(_firstPointOffset, Vector3.right);
             var position = BezierCurvePoint(
                 transform.position + _startOffsetForGizmos,
-                transform.position + _firstPointOffset,
+                p1,
                 transform.position + _secondPointOffset,
                 transform.position,
                 i);
