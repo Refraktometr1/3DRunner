@@ -47,6 +47,7 @@ public abstract class ObstructionPullMono : MonoBehaviour
             _index = 0;
         
         _bonusObjects[ _index].SetActive(true);
+        _bonusObjects[_index].GetComponent<BoxCollider>().enabled = true;
         _bonusObjects[_index].transform.position = position;
         _index++;
     }
