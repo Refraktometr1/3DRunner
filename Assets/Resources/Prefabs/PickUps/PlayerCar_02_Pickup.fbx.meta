@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 70b4e9d5e46adba41a9c074414706dfe
+<<<<<<< HEAD:Assets/Resources/Prefabs/PickUps/PlayerCar_03_Pickup.fbx.meta
+guid: 38e993b9fcaca0145b66549d06dcf797
+=======
+guid: c10ab4e76e1d7c544a67108315305052
+>>>>>>> Add_New_Shader:Assets/Resources/Prefabs/PickUps/PlayerCar_02_Pickup.fbx.meta
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
