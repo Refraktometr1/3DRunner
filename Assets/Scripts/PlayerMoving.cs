@@ -53,7 +53,8 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
     {
         if (transform.position.x < 3)
         {
-            StartCoroutine(CorutineDoMove(transform.position + Vector3.right * 3, false));
+            transform.position = transform.position + Vector3.right * 3;
+            //StartCoroutine(CorutineDoMove(transform.position + Vector3.right * 3, false));
         }
     }
     
@@ -62,7 +63,8 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
         
         if (transform.position.x > -3)
         {
-            StartCoroutine(CorutineDoMove(transform.position + Vector3.left * 3 , true));
+            transform.position = transform.position + Vector3.left * 3;
+           // StartCoroutine(CorutineDoMove(transform.position + Vector3.left * 3 , true));
         }
     }
 
