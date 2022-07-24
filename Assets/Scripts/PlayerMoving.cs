@@ -53,8 +53,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
     {
         if (transform.position.x < 3)
         {
-            transform.position = transform.position + Vector3.right * 3;
-            //StartCoroutine(CorutineDoMove(transform.position + Vector3.right * 3, false));
+            StartCoroutine(CorutineDoMove(transform.position + Vector3.right * 3, false));
         }
     }
     
@@ -63,8 +62,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
         
         if (transform.position.x > -3)
         {
-            transform.position = transform.position + Vector3.left * 3;
-           // StartCoroutine(CorutineDoMove(transform.position + Vector3.left * 3 , true));
+           StartCoroutine(CorutineDoMove(transform.position + Vector3.left * 3 , true));
         }
     }
 
@@ -84,7 +82,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
         {
             while (transform.position.x > roadPosition)
             {
-                transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.left*14, Time.deltaTime);
+                transform.position =  transform.position + Vector3.left;
                 yield return null;
             }
         }
@@ -92,7 +90,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
         {
             while (transform.position.x < roadPosition)
             {
-                transform.position = Vector3.Lerp(transform.position, transform.position + Vector3.right*14, Time.deltaTime);
+                transform.position =  transform.position + Vector3.right;
                 yield return null;
             }
         }

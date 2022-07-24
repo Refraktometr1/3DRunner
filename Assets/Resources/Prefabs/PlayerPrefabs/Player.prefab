@@ -180,4 +180,4 @@ MonoBehaviour:
     m_RotationOrder: 4
   _firstPointOffset: {x: -5, y: 0, z: 0}
   _secondPointOffset: {x: 0, y: 7, z: 0}
-  _startOffsetForGizmos: {x: 2.04, y: 0, z: 3}
+  _startOffsetForGizmos: {x: 0, y: 0, z: 3}

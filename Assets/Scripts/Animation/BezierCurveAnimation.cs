@@ -23,8 +23,6 @@ public class BezierCurveAnimation : MonoBehaviour
         
         while (Vector3.SqrMagnitude(movedGameObject.transform.position - endPositionGO.transform.position) > 0.1f )
         {
-            Debug.Log($"{movedGameObject.transform.position},     {endPositionGO.transform.position}") ;
-            
             _elapsedTime += Time.deltaTime;
             var percentageComplete =  _elapsedTime / animationTime;
 
@@ -32,18 +30,16 @@ public class BezierCurveAnimation : MonoBehaviour
                 ? endPositionGO.transform.position + _firstPointOffset
                 : endPositionGO.transform.position + Vector3.Reflect(_firstPointOffset, Vector3.right);
             
-           
-            
            movedGameObject.transform.position = BezierCurvePoint
            (endPositionGO.transform.position + startOffset,
                p1,
                endPositionGO.transform.position + _secondPointOffset,
                endPositionGO.transform.position,
-               curve.Evaluate(percentageComplete) 
+               percentageComplete
            );
+           Debug.Log(movedGameObject.transform.position);
             yield return null;
         }
-        Debug.Log("AnimationComplete");
         movedGameObject.SetActive(false);
         _elapsedTime = 0;
     }
@@ -68,6 +64,7 @@ public class BezierCurveAnimation : MonoBehaviour
             var p1 = _startOffsetForGizmos.x < 0
                 ? transform.position + _firstPointOffset
                 : transform.position + Vector3.Reflect(_firstPointOffset, Vector3.right);
+            
             var position = BezierCurvePoint(
                 transform.position + _startOffsetForGizmos,
                 p1,
