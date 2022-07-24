@@ -5,8 +5,8 @@ using UnityEngine;
 public class BezierCurveAnimation : MonoBehaviour
 {
     [SerializeField] private AnimationCurve curve;
-    [SerializeField] private Vector3 _firstPointOffset; 
-    [SerializeField] private Vector3 _secondPointOffset;
+    [SerializeField] private int _firstPointOffset; 
+    [SerializeField] private int _secondPointOffset;
     [SerializeField] private Vector3 _startOffsetForGizmos;
     
     private float _elapsedTime;
@@ -26,18 +26,23 @@ public class BezierCurveAnimation : MonoBehaviour
             _elapsedTime += Time.deltaTime;
             var percentageComplete =  _elapsedTime / animationTime;
 
-            var p1 = startOffset.x < 0
-                ? endPositionGO.transform.position + _firstPointOffset
-                : endPositionGO.transform.position + Vector3.Reflect(_firstPointOffset, Vector3.right);
+            var p1 = endPositionGO.transform.position + Vector3.up * _firstPointOffset;
+            if (startOffset.x < 0)
+            {
+                p1 = endPositionGO.transform.position + Vector3.left * _firstPointOffset;
+            }
+            if (startOffset.x > 0)
+            {
+                p1 = endPositionGO.transform.position + Vector3.right * _firstPointOffset;
+            }
             
            movedGameObject.transform.position = BezierCurvePoint
            (endPositionGO.transform.position + startOffset,
                p1,
-               endPositionGO.transform.position + _secondPointOffset,
+               endPositionGO.transform.position + Vector3.up * _secondPointOffset,
                endPositionGO.transform.position,
                percentageComplete
            );
-           Debug.Log(movedGameObject.transform.position);
             yield return null;
         }
         movedGameObject.SetActive(false);
@@ -57,18 +62,22 @@ public class BezierCurveAnimation : MonoBehaviour
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        
-        var a = Vector3.Reflect(_firstPointOffset, Vector3.forward);
         for (float i = 0; i < 1; i+= 0.05f)
         {
-            var p1 = _startOffsetForGizmos.x < 0
-                ? transform.position + _firstPointOffset
-                : transform.position + Vector3.Reflect(_firstPointOffset, Vector3.right);
+            var p1 = transform.position + Vector3.up * _firstPointOffset;
+            if (_startOffsetForGizmos.x < 0)
+            {
+                p1 = transform.position + Vector3.left * _firstPointOffset;
+            }
+            if (_startOffsetForGizmos.x > 0)
+            {
+                p1 = transform.position + Vector3.right * _firstPointOffset;
+            }
             
             var position = BezierCurvePoint(
                 transform.position + _startOffsetForGizmos,
                 p1,
-                transform.position + _secondPointOffset,
+                transform.position + Vector3.up * _secondPointOffset,
                 transform.position,
                 i);
             Gizmos.DrawSphere(position, 0.15f);

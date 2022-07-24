@@ -36,6 +36,5 @@ public class Player : MonoBehaviour, IDamageable, IResourceCollector
         Debug.Log(collectableGameObject.name);
         _collectAnimator.MoveGameObject(collectableGameObject, this.gameObject, 1f);
         _playerResource.Money += value;
-        Debug.Log("CollectFinish");
     }
 }

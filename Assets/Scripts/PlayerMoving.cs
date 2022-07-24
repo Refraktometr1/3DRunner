@@ -6,12 +6,24 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
     private Vector3 _touchStart;
     private Vector3 _swipeDistanse;
     private bool _isDragging;
+    private int _moveTo;
     
     public PlayerScriptableObject PlayerData;
 
     void FixedUpdate()
-    { 
-        transform.position +=  PlayerData.Speed;
+    {
+        if (Mathf.Abs(transform.position.x - _moveTo) < 0.1f)
+        {
+            transform.position +=  PlayerData.Speed;
+        }
+        else if (transform.position.x  > _moveTo)
+        {
+            transform.position =  transform.position + Vector3.left;
+        }
+        else if (transform.position.x  < _moveTo)
+        {
+            transform.position =  transform.position + Vector3.right;
+        }
     }
 
     private void Update()
@@ -30,13 +42,13 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
             return;
 
         _swipeDistanse = Input.mousePosition - _touchStart;
-        if (_swipeDistanse.x < -50)
+        if (_swipeDistanse.x < -40)
         {
             SwipeLeft();
             Reset();
         }
 
-        if (_swipeDistanse.x > 50)
+        if (_swipeDistanse.x > 40)
         {
             SwipeRight();
             Reset();
@@ -53,7 +65,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
     {
         if (transform.position.x < 3)
         {
-            StartCoroutine(CorutineDoMove(transform.position + Vector3.right * 3, false));
+            _moveTo = (int)transform.position.x + 3;
         }
     }
     
@@ -62,37 +74,7 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
         
         if (transform.position.x > -3)
         {
-           StartCoroutine(CorutineDoMove(transform.position + Vector3.left * 3 , true));
-        }
-    }
-
-    private IEnumerator CorutineDoMove(Vector3 moveTo, bool isLeft)
-    {
-        var roadPosition = 0;
-        if (moveTo.x > 2)
-        {
-            roadPosition = 3;
-        }
-        else if(moveTo.x < -2)
-        {
-            roadPosition = -3;
-        }
-
-        if (isLeft)
-        {
-            while (transform.position.x > roadPosition)
-            {
-                transform.position =  transform.position + Vector3.left;
-                yield return null;
-            }
-        }
-        else 
-        {
-            while (transform.position.x < roadPosition)
-            {
-                transform.position =  transform.position + Vector3.right;
-                yield return null;
-            }
+            _moveTo = (int)transform.position.x - 3;
         }
     }
 }
