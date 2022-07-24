@@ -21,14 +21,18 @@ public class BezierCurveAnimation : MonoBehaviour
     {
         var startOffset = movedGameObject.transform.position - endPositionGO.transform.position;
         
-        while (movedGameObject.transform.position != endPositionGO.transform.position)
+        while (Vector3.SqrMagnitude(movedGameObject.transform.position - endPositionGO.transform.position) > 0.1f )
         {
+            Debug.Log($"{movedGameObject.transform.position},     {endPositionGO.transform.position}") ;
+            
             _elapsedTime += Time.deltaTime;
             var percentageComplete =  _elapsedTime / animationTime;
 
             var p1 = startOffset.x < 0
                 ? endPositionGO.transform.position + _firstPointOffset
                 : endPositionGO.transform.position + Vector3.Reflect(_firstPointOffset, Vector3.right);
+            
+           
             
            movedGameObject.transform.position = BezierCurvePoint
            (endPositionGO.transform.position + startOffset,
@@ -39,6 +43,7 @@ public class BezierCurveAnimation : MonoBehaviour
            );
             yield return null;
         }
+        Debug.Log("AnimationComplete");
         movedGameObject.SetActive(false);
         _elapsedTime = 0;
     }
