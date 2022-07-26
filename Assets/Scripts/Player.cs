@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Zenject;
 
 public class Player : MonoBehaviour, IDamageable, IResourceCollector
 {
@@ -6,14 +8,20 @@ public class Player : MonoBehaviour, IDamageable, IResourceCollector
     private AudioResources _audio;
     private PlayerScriptableObject _playerData;
     private BezierCurveAnimation _collectAnimator;
+
     
     private void Awake()
     {
         _playerResource = Resources.Load<PlayerResourceStorage>("PlayerResourceStorage");
         _audio = Resources.Load<AudioResources>("AudioResources");
         _playerData = Resources.Load<PlayerScriptableObject>("PlayerData");
+    }
+
+    private void Start()
+    {
         _collectAnimator = GetComponent<BezierCurveAnimation>();
     }
+
 
     public void Die()
     {

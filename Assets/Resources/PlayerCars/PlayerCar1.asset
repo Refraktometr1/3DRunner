@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1133748126737310821, guid: ddd1763f8329c3140b99ab8f96f5d652, type: 3}
   isOpen: 1
-  isActive: 1
+  isActive: 0
   price: 0
-  name: BrrrBrr
+  nameText: 
   capacity: 20
   bodyColor: {r: 0.08708938, g: 0.8113208, b: 0, a: 0}

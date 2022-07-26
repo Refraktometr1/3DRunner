@@ -5,8 +5,8 @@ using UnityEngine;
 public class BezierCurveAnimation : MonoBehaviour
 {
     [SerializeField] private AnimationCurve curve;
-    [SerializeField] private int _firstPointOffset; 
-    [SerializeField] private int _secondPointOffset;
+    [SerializeField] private int _firstPointOffset = 5; 
+    [SerializeField] private int _secondPointOffset = 5;
     [SerializeField] private Vector3 _startOffsetForGizmos;
     
     private float _elapsedTime;
@@ -20,7 +20,7 @@ public class BezierCurveAnimation : MonoBehaviour
     private IEnumerator AnimatorMove(GameObject movedGameObject,  GameObject endPositionGO, float animationTime)
     {
         var startOffset = movedGameObject.transform.position - endPositionGO.transform.position;
-        
+        _elapsedTime = 0;
         while (Vector3.SqrMagnitude(movedGameObject.transform.position - endPositionGO.transform.position) > 0.1f )
         {
             _elapsedTime += Time.deltaTime;
@@ -37,12 +37,12 @@ public class BezierCurveAnimation : MonoBehaviour
             }
             
            movedGameObject.transform.position = BezierCurvePoint
-           (endPositionGO.transform.position + startOffset,
-               p1,
-               endPositionGO.transform.position + Vector3.up * _secondPointOffset,
-               endPositionGO.transform.position,
-               percentageComplete
-           );
+                                                (endPositionGO.transform.position + startOffset,
+                                                    p1,
+                                                    endPositionGO.transform.position + Vector3.up * _secondPointOffset,
+                                                    endPositionGO.transform.position,
+                                                    percentageComplete
+                                                );
             yield return null;
         }
         movedGameObject.SetActive(false);

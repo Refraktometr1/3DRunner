@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -9,6 +10,11 @@ public class PlayerMoving : MonoSingleton<PlayerMoving>
     private int _moveTo;
     
     public PlayerScriptableObject PlayerData;
+
+    private void Start()
+    {
+        PlayerData = Resources.Load<PlayerScriptableObject>("PlayerData");
+    }
 
     void FixedUpdate()
     {
