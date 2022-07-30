@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e713e204f3b76a42abf28a5a20cc9bc, type: 3}
   m_Name: PlayerCar3
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 366625224871074987, guid: 304903993ab8b7d4188bbe6f7559237e, type: 3}
+  gameObject: {fileID: 3677894946785537377, guid: 0f5017e568119064682104bfbf971e04, type: 3}
   isOpen: 1
   isActive: 1
   price: 100
