@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e713e204f3b76a42abf28a5a20cc9bc, type: 3}
   m_Name: PlayerCar2
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 8788836405818090962, guid: 1a6672c2268ff4c438bc92b576ba6052, type: 3}
-  isOpen: 0
-  isActive: 0
+  gameObject: {fileID: 5570834383212164802, guid: a37d3cefe2598ad4f8a0289913dba9af, type: 3}
+  isOpen: 1
+  isActive: 1
   price: 100
-  name: PickUp
+  nameText: 
   capacity: 50
-  bodyColor: {r: 0.7924528, g: 0, b: 0, a: 0}
+  bodyColor: {r: 0.028301895, g: 0.01348345, b: 0.01348345, a: 0}

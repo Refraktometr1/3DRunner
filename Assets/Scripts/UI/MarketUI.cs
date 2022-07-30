@@ -15,12 +15,12 @@ public class MarketUI : MonoBehaviour
       _root = gameObject.GetComponent<UIDocument>().rootVisualElement;
       _carButtonsContainer  = _root.Q<VisualElement>("CarButtonsContainer");
 
-      for (int i = 0; i <  _playerCarsData.Materials.Count; i++)
+      for (int i = 0; i <  _playerCarsData.Cars.Count; i++)
       {
          VisualElement _template = CarPrefabTemplate.CloneTree();
          _carButton = _template.Q<VisualElement>("CarTemplate");
          _carButtonsContainer.Add(_carButton);
-         var a =  _playerCarsData.Materials[i].color;
+         var a =  _playerCarsData.Cars[i].bodyColor;
          
          _carButton.style.backgroundColor = a;
          _carButton.name = i.ToString();

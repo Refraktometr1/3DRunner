@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e713e204f3b76a42abf28a5a20cc9bc, type: 3}
-  m_Name: PlayerCar3
+  m_Name: PlayerCar5
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 4347893152472161508, guid: c4a6612c3fe0a114c8bc4db27c5e1948, type: 3}
+  gameObject: {fileID: 9172681588447873173, guid: 5a11a2f4558ecfe488139c43a854e716, type: 3}
   isOpen: 1
   isActive: 0
   price: 100
   nameText: 
   capacity: 50
-  bodyColor: {r: 0.18477392, g: 0.4056604, b: 0.14351194, a: 0}
+  bodyColor: {r: 0, g: 0.7921569, b: 0.7080283, a: 0}

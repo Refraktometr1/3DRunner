@@ -6,5 +6,4 @@ using UnityEngine;
 public class PlayerCarsData : ScriptableObject
 {
     public List<PlayerModel> Cars;
-    public List<Material> Materials;
 }
