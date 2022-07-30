@@ -4,10 +4,11 @@ using System.Linq;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Zenject;
 
 public class PlayerSpawner : MonoBehaviour
 {
-    [FormerlySerializedAs("virtualCamera1")] public CinemachineVirtualCamera virtualCamera;
+    public CinemachineVirtualCamera virtualCamera;
     private void Awake()
     {
         var _playerCarsData = Resources.Load<PlayerCarsData>("PlayerCarsData");
