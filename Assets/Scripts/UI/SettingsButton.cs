@@ -12,6 +12,7 @@ public class SettingsButton : MonoBehaviour
   private UnityEngine.UIElements.Button _settingsButton;
   private UnityEngine.UIElements.Button _speedUpButton;
   private UnityEngine.UIElements.Button _restartButton;
+  private UnityEngine.UIElements.Button _marketButton;
   
   private UnityEngine.UIElements.Button _soundButton;
   private UnityEngine.UIElements.Button _musicButton;
@@ -38,6 +39,7 @@ public class SettingsButton : MonoBehaviour
     _speedUpButton  = root.Q<UnityEngine.UIElements.Button>("SpeedUP");
     _restartButton  = root.Q<UnityEngine.UIElements.Button>("Restart");
     _settingsButton = root.Q<UnityEngine.UIElements.Button>("Settings");
+    _marketButton = root.Q<UnityEngine.UIElements.Button>("Market");
     _soundButton = root.Q<UnityEngine.UIElements.Button>("sound-button");
     _musicButton = root.Q<UnityEngine.UIElements.Button>("music-button");
     _vibrationButton = root.Q<UnityEngine.UIElements.Button>("vibration-button");
@@ -48,7 +50,8 @@ public class SettingsButton : MonoBehaviour
     
     _speedUpButton.RegisterCallback<ClickEvent>(evt => SpeedUp());
     _restartButton.RegisterCallback<ClickEvent>(evt => RestartScene());
-    _settingsButton.RegisterCallback<ClickEvent>(ev => OpenClosePanel(_settingsContainer));
+    _settingsButton.RegisterCallback<ClickEvent>(evt => OpenClosePanel(_settingsContainer));
+    _marketButton.RegisterCallback<ClickEvent>(evt => OpenMarket());
     
     _soundButton.RegisterCallback<ClickEvent>(ev => SoundSettings());
     _musicButton.RegisterCallback<ClickEvent>(ev => MusicSettings());
@@ -65,6 +68,11 @@ public class SettingsButton : MonoBehaviour
     _resourceProgressBar.title = ResourceStorage.Money.ToString();
 
     _settingsContainer.style.display = DisplayStyle.None;
+  }
+
+  private void OpenMarket()
+  {
+    SceneManager.LoadSceneAsync("Market");
   }
 
   private void VibrationSettings()

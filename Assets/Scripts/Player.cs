@@ -1,4 +1,5 @@
 using System;
+using JetBrains.Annotations;
 using UnityEngine;
 using Zenject;
 
@@ -8,30 +9,21 @@ public class Player : MonoBehaviour, IDamageable, IResourceCollector
     private AudioResources _audio;
     private PlayerScriptableObject _playerData;
     private BezierCurveAnimation _collectAnimator;
-    [Inject] private string bindedString;
 
     
+    public void Init(BezierCurveAnimation collectAnimator)
+    {
+        _collectAnimator = collectAnimator;
+    }
+
     private void Awake()
     {
-        
         _audio = Resources.Load<AudioResources>("AudioResources");
         _playerData = Resources.Load<PlayerScriptableObject>("PlayerData");
         _playerResource = Resources.Load<PlayerResourceStorage>("PlayerResourceStorage");
-
     }
     
-    // [Inject] public void Construct(PlayerResourceStorage playerResource)
-    // {
-    //     _playerResource = playerResource;
-    // }
-   
-
-    private void Start()
-    {
-        _collectAnimator = GetComponent<BezierCurveAnimation>();
-    }
-
-
+    
     public void Die()
     {
         AudioManager.Instanse.PlaySound(_audio.Die);
@@ -49,13 +41,9 @@ public class Player : MonoBehaviour, IDamageable, IResourceCollector
 
     public void Collect(int value, GameObject collectableGameObject)
     {
-        Debug.Log(bindedString);
         collectableGameObject.GetComponent<BoxCollider>().enabled = false;
         Debug.Log(collectableGameObject.name);
         _collectAnimator.MoveGameObject(collectableGameObject, this.gameObject, 1f);
         _playerResource.Money += value;
     }
 }
-
-
-public class Factory : PlaceholderFactory<Player> { }

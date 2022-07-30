@@ -11,8 +11,8 @@ public class PlayerSpawner : MonoBehaviour
     public CinemachineVirtualCamera virtualCamera;
     private void Awake()
     {
-        var _playerCarsData = Resources.Load<PlayerCarsData>("PlayerCarsData");
-        var activeCar = _playerCarsData.Cars.FirstOrDefault(active => active.isActive == true);
+        var playerCarsData = Resources.Load<PlayerCarsData>("PlayerCarsData");
+        var activeCar = playerCarsData.Cars.FirstOrDefault(active => active.isActive == true);
         var player = Instantiate(activeCar.gameObject, Vector3.zero, Quaternion.identity) ?? throw new ArgumentNullException(nameof(activeCar));
         player.transform.parent = transform;
         virtualCamera.Follow = player.transform;
@@ -23,8 +23,8 @@ public class PlayerSpawner : MonoBehaviour
     {
         var playerScript = CheckLinkedScript<Player>(player);
         CheckLinkedScript<PlayerMoving>(player);
-        CheckLinkedScript<BezierCurveAnimation>(player);
         var animationScript = CheckLinkedScript<BezierCurveAnimation>(player);
+        playerScript.Init(animationScript);
     }
 
     private T CheckLinkedScript<T>(GameObject gameObjectForCheck) where T: UnityEngine.Component

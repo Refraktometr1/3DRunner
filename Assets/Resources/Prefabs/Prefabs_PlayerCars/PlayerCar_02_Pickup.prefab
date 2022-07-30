@@ -1090,6 +1090,7 @@ GameObject:
   - component: {fileID: 5045233313352313976}
   - component: {fileID: -4709762802990778118}
   - component: {fileID: 7654168103762571097}
+  - component: {fileID: 3203828261878763148}
   m_Layer: 0
   m_Name: PlayerCar_02_Pickup
   m_TagString: Untagged
@@ -1158,6 +1159,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 4.8}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &3203828261878763148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5570834383212164802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1853b4e07e6f5cc438b03f9f0181fcfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerData: {fileID: 11400000, guid: fb3acb3ae06529742bc1259e7a3e85fe, type: 2}
 --- !u!1 &5744822464165461762
 GameObject:
   m_ObjectHideFlags: 0
